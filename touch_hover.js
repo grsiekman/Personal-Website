@@ -1,6 +1,6 @@
 document.addEventListener('touchend', function(event) {
   // Get all social media icons
-  var icons = document.getElementsByClassName('social-media-icon');
+  var icons = document.getElementsByClassName('content-icon');
 
   // Loop through all icons and add the touch-hover class on touchend
   for (var i = 0; i < icons.length; i++) {
