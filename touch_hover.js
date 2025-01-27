@@ -7,10 +7,9 @@ document.addEventListener('touchstart', function(event) {
     icons[i].classList.add('touch-hover');
   }
 
-  // Add a timeout to remove the touch-hover class after a short delay (e.g., 200ms)
-  setTimeout(function() {
-    for (var i = 0; i < icons.length; i++) {
+  // Remove the touch-hover class after a short delay
+    setTimeout(function() {
       icons[i].classList.remove('touch-hover');
-    }
-  }, 200);
+    }, 200);
+  }
 }, false);
