@@ -1,5 +1,6 @@
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+var style = window.getComputedStyle(document.body);
 
 function setThemeBasedOnSystemPreference() {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
