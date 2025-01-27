@@ -122,10 +122,18 @@ a {
   }
 
   #social-menu ul li img {
-	width:17%;
+		width:17%;
   }
 
   #main-box {
-	padding-top:22%;
+  	padding-top:22%;
   }
+
+  #social-menu ul li img:active {
+		filter:grayscale(0);
+		opacity: 100%;
+		transform: scale(1.2);
+		transition: filter 0.3s ease;
+		transition: transform 0.3s ease;
+	}
 }
