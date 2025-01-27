@@ -1,10 +1,7 @@
 :root {
-  /*color-scheme: light dark;*/
   --background-color: #415b74;
   --box-color:#edf0f2;
   --font-color: #0e141a;
-  --dark-background-color: #273745;
-  --light-background-color: #415b74;
 }
 
 [data-theme="dark"] {
@@ -125,10 +122,11 @@ a {
 
 .theme-switch-wrapper {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
   align-items: center;
+  margin-left: 87%;
   font-family: "Lora", serif;
-  font-size:.8em;
+  font-size:1.2vw;
   color: #DAE0E6;
 }
 
@@ -137,7 +135,7 @@ a {
   height: 34px;
   position: relative;
   width: 60px;
-  margin-right:.75%;
+  margin-bottom: 5px;
 }
 
 .theme-switch input {
@@ -182,6 +180,13 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+@media only screen and (max-width: 875px) {
+	.theme-switch-wrapper {
+	  font-size:1.7vw;
+	  margin-left: 80%;
+	}
+}
+
 @media only screen and (max-width: 600px) {
   #id_photo {
   	max-width: 40%;
@@ -198,7 +203,8 @@ input:checked + .slider:before {
   }
 
   .theme-switch-wrapper {
-	  font-size:.7em;
+	  font-size:2vw;
+	  margin-left: 75%;
 	}
 
 	.theme-switch {
