@@ -34,7 +34,7 @@ body {
 }
 
 #nametag {
-	font-family: "Geist", serif;
+	font-family: "Bebas Neue", serif;
 	display:inline;
 	width:75%;
 	text-align:center;
@@ -43,6 +43,12 @@ body {
 #nametag h1{
 	margin-top:1%;
 	margin-bottom:.25%;
+	font-size:2.8em;
+	letter-spacing:0.12em;
+}
+
+#nametag p {
+	letter-spacing:.15em;
 }
 
 a {
@@ -56,11 +62,15 @@ a {
 }
 
 #info-box {
-	font-family: "Newsreader", serif;
+	font-family: "Lora", serif;
 	margin: 0 5%;
 }
 
-#main-box h1, h2, h3, p{
+#info-box p {
+	margin: .6% auto;
+}
+
+#main-box h1, h2, h3, p {
 	color: light-dark(#0e141a, #e2e6eb);
 }
 
@@ -99,7 +109,7 @@ a {
 }
 
 #footer {
-	font-family: "Newsreader", serif;
+	font-family: "Lora", serif;
 }
 
 #footer p {
