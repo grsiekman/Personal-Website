@@ -92,16 +92,22 @@ a {
 	filter:grayscale(1);
 	width:7%;
 	opacity:50%;
-	transition: filter 0.3s ease;
-	transition: transform 0.3s ease;
+	transition: filter 0.3s ease, transform 0.3s ease;
+	touch-action: manipulation;
 }
 
-#social-menu ul li img:hover {
+#social-menu ul li img:hover,
+#social-menu ul li img:active {
 	filter:grayscale(0);
 	opacity: 100%;
 	transform: scale(1.2);
-	transition: filter 0.3s ease;
-	transition: transform 0.3s ease;
+	transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+#social-menu ul li img:not(:active) {
+  filter: grayscale(100%);
+  transform: scale(1);
+  transition: filter 0.3s ease, transform 0.3s ease;
 }
 
 #spacer {
@@ -128,20 +134,4 @@ a {
   #main-box {
   	padding-top:22%;
   }
-
-  #social-menu ul li img {
-		filter:grayscale(1);
-		width:7%;
-		opacity:50%;
-		transition: filter 0.3s ease;
-		transition: transform 0.3s ease;
-	}
-
-  #social-menu ul li img:active {
-		filter:grayscale(0);
-		opacity: 100%;
-		transform: scale(1.2);
-		transition: filter 0.3s ease;
-		transition: transform 0.3s ease;
-	}
 }
