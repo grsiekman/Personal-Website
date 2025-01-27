@@ -3,6 +3,8 @@
   --background-color: #415b74;
   --box-color:#edf0f2;
   --font-color: #0e141a;
+  --dark-background-color: #273745;
+  --light-background-color: #415b74;
 }
 
 [data-theme="dark"] {

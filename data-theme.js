@@ -1,6 +1,5 @@
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
-var style = window.getComputedStyle(document.body);
 
 function setThemeBasedOnSystemPreference() {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -13,7 +12,13 @@ function setThemeBasedOnSystemPreference() {
 }
 
 function setThemeColor() {
-    document.head.querySelector('meta[property="theme-color"]').content = style.getPropertyValue('--background-color');
+  const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+
+  if (currentTheme === 'dark') {
+    themeColorMeta.content = getComputedStyle(document.documentElement).getPropertyValue('--dark-background-color');
+  } else {
+    themeColorMeta.content = getComputedStyle(document.documentElement).getPropertyValue('--light-background-color');
+  }
 }
 
 if (currentTheme) {
