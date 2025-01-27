@@ -22,7 +22,7 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
 		<meta name="apple-mobile-web-app-title" content="Greg Siekman" />
 		<link rel="manifest" href="favicon/site.webmanifest" />
-		<meta name="theme-color" content="var(--background-color)">
+		<meta name="theme-color" content="#415b74">
 	</head>
 
 	<body>
@@ -32,7 +32,7 @@
 			        <input type="checkbox" id="checkbox" aria-label="Switch visual theme" />
 			        <div class="slider round"></div>
 			  </label>
-			  <p id="enable-text">Enable Dark<br>Mode<p>
+			  Enable Dark<br>Mode
 			</div>
 			<img src="IMG_6571.png" alt="Picture of Greg Siekman smiling, wearing white dress shirt and blue blazer" id="id_photo">
 
@@ -70,5 +70,8 @@
 		</div>
 
 		<script src="data-theme.js"></script>
+		<script>
+			document.querySelector('meta[name="theme-color"]').content = var(--background-color);
+		</script>
 	</body>
 </html>
