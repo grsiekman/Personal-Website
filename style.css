@@ -123,11 +123,10 @@ a {
 
 .theme-switch-wrapper {
   display: flex;
-  position:fixed; /*Fix this so it goes away on scroll*/
-  right:7%;
+  justify-content: flex-end;
   align-items: center;
   font-family: "Lora", serif;
-  font-size:.7em;
+  font-size:.8em;
   color: #DAE0E6;
 }
 
@@ -136,7 +135,7 @@ a {
   height: 34px;
   position: relative;
   width: 60px;
-  margin-right:5%;
+  margin-right:.75%;
 }
 
 .theme-switch input {
@@ -170,7 +169,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-  transform: translateX(24px);
+  transform: translateX(26px);
 }
 
 .slider.round {
@@ -197,13 +196,7 @@ input:checked + .slider:before {
   }
 
   .theme-switch-wrapper {
-	  right:2%;
-	}
-}
-
-@media only screen and (max-width: 480px) {
-	.theme-switch-wrapper {
-		right:-1%;
+	  font-size:.7em;
 	}
 
 	.theme-switch {
@@ -217,6 +210,6 @@ input:checked + .slider:before {
 	}
 
 	input:checked + .slider:before {
-  	transform: translateX(15px);
+  	transform: translateX(18px);
 	}
 }
