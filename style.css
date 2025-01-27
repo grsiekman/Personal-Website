@@ -96,7 +96,7 @@ a {
 	transition: transform 0.3s ease;
 }
 
-#social-menu ul li img:hover {
+#social-menu ul li img:hover, #social-menu ul li img:touch-hover{
 	filter:grayscale(0);
 	opacity: 100%;
 	transform: scale(1.2);
