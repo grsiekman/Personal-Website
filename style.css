@@ -108,11 +108,8 @@ a {
 	flex-grow: 1;
 }
 
-#footer {
-	font-family: "Lora", serif;
-}
-
 #footer p {
+	font-family: "Lora", serif;
 	color:#DAE0E6;
 	font-size: .75em;
 }
