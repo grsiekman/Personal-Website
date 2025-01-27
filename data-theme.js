@@ -26,9 +26,11 @@ if (currentTheme) {
 
     if (currentTheme === 'dark') {
         toggleSwitch.checked = true;
+        setThemeColor();
     }
  } else {
     setThemeBasedOnSystemPreference();
+    setThemeColor();
 
     if (currentTheme === 'dark') {
         toggleSwitch.checked = true;
@@ -46,5 +48,4 @@ function switchTheme(e) {
     }    
 }
 
-setThemeColor();
 toggleSwitch.addEventListener('change', switchTheme, false);
