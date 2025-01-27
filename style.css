@@ -96,13 +96,19 @@ a {
 	transition: transform 0.3s ease;
 }
 
-#social-menu ul li img:hover, #social-menu ul li img.touch-hover {
+#social-menu ul li img:active,
+#social-menu ul li img:hover,
+#social-menu ul li img:focus {
 	filter:grayscale(0);
 	opacity: 100%;
 	transform: scale(1.2);
 	transition: filter 0.3s ease;
 	transition: transform 0.3s ease;
 }
+
+ #social-menu ul li img:active:not(:focus) {
+ 	transition-delay:0s;
+ }
 
 #spacer {
 	flex-grow: 1;
