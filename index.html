@@ -2,7 +2,6 @@
 <html>
 	<head>
 		<title>Home - Greg Siekman</title>
-		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="style.css?version1.14">
 		<meta charset="UTF-8">
 		<meta name="description" content="Personal Website of Greg Siekman">
@@ -17,18 +16,25 @@
 		<meta property="og:image:width" content="1080">
 		<meta property="og:image:height" content="718">
 		<meta property="og:image:alt" content="Lanscapre photo of a body of water and fall trees">
-		<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
-		<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
-		<link rel="shortcut icon" href="/favicon/favicon.ico" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+		<link rel="shortcut icon" href="favicon/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
 		<meta name="apple-mobile-web-app-title" content="Greg Siekman" />
-		<link rel="manifest" href="/favicon/site.webmanifest" />
+		<link rel="manifest" href="favicon/site.webmanifest" />
 		<meta name="theme-color" content="#415b74" media="(prefers-color-scheme: light)">
 		<meta name="theme-color" content="#273745" media="(prefers-color-scheme: dark)">
 	</head>
 
 	<body>
 		<div id="content">
+			<div class="theme-switch-wrapper">
+			    <label class="theme-switch" for="checkbox">
+			        <input type="checkbox" id="checkbox" aria-label="Switch visual theme" />
+			        <div class="slider round"></div>
+			  </label>
+			  Enable Dark Mode
+			</div>
 			<img src="IMG_6571.png" alt="Picture of Greg Siekman smiling, wearing white dress shirt and blue blazer" id="id_photo">
 
 			<div id="main-box">
@@ -63,5 +69,7 @@
 		<div id="footer">
 			<p>&#169; 2025 Greg Siekman</p>
 		</div>
+
+		<script src="data-theme.js"></script>
 	</body>
 </html>
