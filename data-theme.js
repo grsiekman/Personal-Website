@@ -37,6 +37,7 @@ function switchTheme(e) {
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light');
         metaThemeColor.setAttribute('content', '#415b74');
+        
     }    
 }
 
