@@ -12,7 +12,7 @@ function setThemeBasedOnSystemPreference() {
 }
 
 function setThemeColor() {
-    document.querySelector('meta[name="theme-color"]').setAttribute("content", '--background-color');
+    document.querySelector('meta[property="theme-color"]').setAttribute("content", '--background-color');
 }
 
 if (currentTheme) {
