@@ -79,13 +79,9 @@
 		<script>
 			$(document).ready(function() {
  		      $("#social-menu ul li img").on("touchend", function(event) {
+ 		      	event.preventDefault();
+
     			var img = $(this);
-    			var link = img.parent().parent();
-
-   				// Trigger the default behavior of the link
-   				event.preventDefault();
-    			var win = window.open(link.attr("href"), '_blank');
-
     			img.css("filter", "grayscale(0)");
     			img.css("opacity", "100%");
     			img.css("transform", "scale(1.2)");
