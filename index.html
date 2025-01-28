@@ -78,15 +78,15 @@
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script>
 		$(document).ready(function() {
-  		  $(".content-icon").on("touchend", function(event) {
-    	   event.preventDefault(); // Prevent the default behavior of the touchend event
+		  $(".content-icon").on("touchend", function(event) {
+		    event.preventDefault(); // Prevent the default behavior of the touchend event
 
-   		   var img = $(this);
+		    var img = $(this);
 
-           img.closest("a").trigger("touchend");
+		    img.closest("a").trigger("touchend");
 
-    	   animateIcon(img);
-  		  });
+		    animateIcon(img);
+		  });
 		});
 
 		function animateIcon(img) {
@@ -98,6 +98,10 @@
 		    img.css("filter", "grayscale(1)");
 		    img.css("opacity", "50%");
 		    img.css("transform", "scale(1)");
+
+		    // Remove the animation classes after the delay
+		    img.removeClass("animate");
+		    img.removeClass("animate-hover");
 		  }, 500);
 		}
 	    </script>

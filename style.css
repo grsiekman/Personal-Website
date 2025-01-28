@@ -203,6 +203,11 @@ input:checked + .slider:before {
 		width:17%;
   }
 
+  .content-icon:active, .content-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
   #main-box {
   	padding-top:22%;
   }
