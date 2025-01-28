@@ -84,26 +84,8 @@
 		    var img = $(this);
 
 		    img.closest("a").trigger("touchend");
-
-		    animateIcon(img);
 		  });
 		});
-
-		function animateIcon(img) {
-		  img.css("filter", "grayscale(0)");
-		  img.css("opacity", "100%");
-		  img.css("transform", "scale(1.2)");
-
-		  setTimeout(function() {
-		    img.css("filter", "grayscale(1)");
-		    img.css("opacity", "50%");
-		    img.css("transform", "scale(1)");
-
-		    // Remove the animation classes after the delay
-		    img.removeClass("animate");
-		    img.removeClass("animate-hover");
-		  }, 500);
-		}
 	    </script>
 	</body>
 </html>
