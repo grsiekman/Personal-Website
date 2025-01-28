@@ -77,23 +77,29 @@
 		<script src="data-theme.js"></script>
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script>
-			$(document).ready(function() {
- 		      $(".content-icon").on("touchend", function(event) 
-    			var img = $(this);
+		$(document).ready(function() {
+  		  $(".content-icon").on("touchend", function(event) {
+    	   event.preventDefault(); // Prevent the default behavior of the touchend event
 
-    			img.closest("a").trigger("touchend");
- 		      	$(".content-icon").on("touchend", function(event) 
-    			img.css("filter", "grayscale(0)");
-    			img.css("opacity", "100%");
-    			img.css("transform", "scale(1.2)");
+   		   var img = $(this);
 
-    			setTimeout(function() {
-      			img.css("filter", "grayscale(1)");
-      			img.css("opacity", "50%");
-      			img.css("transform", "scale(1)");
-   			    }, 500);
-  			  });
-		    });
+           img.closest("a").trigger("touchend");
+
+    	   animateIcon(img);
+  		  });
+		});
+
+		function animateIcon(img) {
+		  img.css("filter", "grayscale(0)");
+		  img.css("opacity", "100%");
+		  img.css("transform", "scale(1.2)");
+
+		  setTimeout(function() {
+		    img.css("filter", "grayscale(1)");
+		    img.css("opacity", "50%");
+		    img.css("transform", "scale(1)");
+		  }, 500);
+		}
 	    </script>
 	</body>
 </html>
