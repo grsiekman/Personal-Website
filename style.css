@@ -103,12 +103,14 @@ a {
 	transition: filter 0.3s ease, transform 0.3s ease;
 }
 
+@media (pointer: fine) {
 	#social-menu ul li img:hover {
 		filter:grayscale(0);
 		opacity: 100%;
 		transform: scale(1.2);
 		transition: filter 0.3s ease, transform 0.3s ease;
 	}
+}
 
 #spacer {
 	flex-grow: 1;
@@ -206,7 +208,7 @@ input:checked + .slider:before {
   .content-icon:active, .content-icon:focus {
     outline: none;
     box-shadow: none;
-}
+	}
 
   #main-box {
   	padding-top:22%;
