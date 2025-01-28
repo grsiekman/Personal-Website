@@ -78,7 +78,7 @@
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script>
 			$(document).ready(function() {
- 		      $("#social-menu ul li img").on("touchend", function(event) {
+ 		      $("#social-menu ul li img").on("touchend", function() {
  		      	event.preventDefault();
 
     			var img = $(this);
@@ -91,7 +91,7 @@
     			img.css("opacity", "100%");
     			img.css("transform", "scale(1.2)");
 
-    			setTimeout( {
+    			setTimeout(function() {
       			img.css("filter", "grayscale(1)");
       			img.css("opacity", "50%");
       			img.css("transform", "scale(1)");
