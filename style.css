@@ -207,7 +207,11 @@ input:checked + .slider:before {
   }
 
   .theme-switch-wrapper {
-	  font-size:1.75vw;
+	  font-size:2.5vw;
 	  margin-left: 80%;
+	}
+
+	#footer p {
+		margin-bottom:15px;
 	}
 }
