@@ -75,5 +75,22 @@
 			</div>
 
 		<script src="data-theme.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script>
+			$(document).ready(function() {
+ 		      $("#social-menu ul li img").on("touchend", function() {
+    			var img = $(this);
+    			img.css("filter", "grayscale(0)");
+    			img.css("opacity", "100%");
+    			img.css("transform", "scale(1.2)");
+
+    			setTimeout(function() {
+      			img.css("filter", "grayscale(1)");
+      			img.css("opacity", "75%");
+      			img.css("transform", "scale(1)");
+   			 }, 200);
+  			});
+		});
+</script>
 	</body>
 </html>

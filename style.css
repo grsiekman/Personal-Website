@@ -99,7 +99,7 @@ a {
 #social-menu ul li img {
 	filter:grayscale(1);
 	width:7%;
-	opacity:50%;
+	opacity:75%;
 	transition: filter 0.3s ease, transform 0.3s ease;
 }
 
@@ -119,7 +119,7 @@ a {
 	color:#DAE0E6;
 	font-size: .75em;
 	margin-left:.75%;
-	margin-bottom:30px;
+	margin-bottom:20px;
 }
 
 .theme-switch-wrapper {
@@ -210,7 +210,7 @@ input:checked + .slider:before {
 	  width: 21vw;
 	  height: 11vw;
 	  background-color: #666666;
-	  opacity: 75%;
+	  opacity: 65%;
 	  position: fixed;
  	  bottom:1.2%;
 	  border-radius: 28px;
@@ -243,4 +243,6 @@ input:checked + .slider:before {
 	#footer p {
 		margin-bottom:15px;
 	}
+
+	#social-menu ul li img:hover
 }
