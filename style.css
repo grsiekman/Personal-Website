@@ -208,7 +208,7 @@ input:checked + .slider:before {
 
   #shadow-box {
 	  width: 21vw;
-	  height: 10vw;
+	  height: 11vw;
 	  background-color: #666666;
 	  opacity: 75%;
 	  position: fixed;
@@ -223,7 +223,7 @@ input:checked + .slider:before {
 	}
 
 	.theme-switch {
-		
+		margin-bottom:3.5%;
 	}
 
 	#footer p {
