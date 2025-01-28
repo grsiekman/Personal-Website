@@ -79,6 +79,8 @@
 		<script>
 			$(document).ready(function() {
  		      $("#social-menu ul li img").on("touchend", function() {
+ 		      	event.preventDefault();
+ 		      	
     			var img = $(this);
     			img.css("filter", "grayscale(0)");
     			img.css("opacity", "100%");
@@ -86,7 +88,7 @@
 
     			setTimeout(function() {
       			img.css("filter", "grayscale(1)");
-      			img.css("opacity", "75%");
+      			img.css("opacity", "50%");
       			img.css("transform", "scale(1)");
    			 }, 500);
   			});
