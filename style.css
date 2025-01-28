@@ -112,7 +112,14 @@ a {
 	}
 }
 
-.content-icon:active, .content-icon:focus {
+.content-icon:active,
+.content-icon:focus,
+.content-icon img:active,
+.conentent-icon img:focus,
+#social-menu ul li:active,
+#social-menu ul li:focus,
+#social-menu ul a:active,
+#social-menu ul a:focus {
   outline: none;
   box-shadow: none;
 }
