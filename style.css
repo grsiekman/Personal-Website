@@ -18,10 +18,15 @@ body {
   justify-content: space-between;
 }
 
-#content {
+.content {
 	padding-top:1%;
 	padding-left:8%;
 	padding-right:8%;
+}
+
+#privacy-content {
+	margin-top:10%;
+	padding-top:0;
 }
 
 #id_photo {
@@ -35,10 +40,18 @@ body {
   	margin-bottom:-9%;
 }
 
-#main-box {
+.main-box {
 	background-color: var(--box-color);
-	padding-top:9%;
 	border-radius: 20px;
+}
+
+#home-main-box {
+	padding-top:9%;
+}
+
+#privacy-main-box {
+	padding-top:2%;
+	padding-bottom:1px;
 }
 
 #nametag {
@@ -48,11 +61,17 @@ body {
 	text-align:center;
 }
 
-#nametag h1{
+h1{
+	font-family: "Bebas Neue", serif;
 	margin-top:1%;
 	margin-bottom:.25%;
 	font-size:2.8em;
 	letter-spacing:0.12em;
+	color: var(--font-color);
+}
+
+.privacy-h1 {
+	text-align:center;
 }
 
 #nametag p {
@@ -103,14 +122,12 @@ a {
 	transition: filter 0.3s ease, transform 0.3s ease;
 }
 
-@media (pointer: fine) {
-	#social-menu ul li img:hover {
+#social-menu ul li img:hover {
 		filter:grayscale(0);
 		opacity: 100%;
 		transform: scale(1.2);
 		transition: filter 0.3s ease, transform 0.3s ease;
-	}
-}
+	} /*May need to move this to pointer once I get jQuery working*/
 
 #spacer {
 	flex-grow: 1;
@@ -121,7 +138,32 @@ a {
 	color:#DAE0E6;
 	font-size: .75em;
 	margin-left:.75%;
-	margin-bottom:20px;
+	margin-bottom:28px;
+}
+
+#footer a {
+	font-family: "Lora", serif;
+	color:#DAE0E6;
+	text-decoration: underline;
+	text-decoration-thickness: .5px;
+}
+
+#footer a:hover {
+	color:#bfc5ca;
+}
+
+#privacy-text {
+	margin: 1% 2% 0;
+}
+
+#privacy-main-box a {
+	color:#273745;
+	text-decoration:underline;
+	text-decoration-thickness: .5px;
+}
+
+#return-home {
+	margin-left: 2%;
 }
 
 .theme-switch-wrapper {
@@ -139,10 +181,22 @@ a {
 .theme-switch {
   display: inline-block;
   position: relative;
-  height: 25px;
+  height: 20px;
   width: 43px;
   -webkit-user-select: none;
   margin-bottom:2%;
+}
+
+@media screen and (min-width: 800px) {
+	#enable-text {
+	  color: var(--background-color);
+	  transition: color .15s;
+	}
+
+	#dark-switch-hover:hover #enable-text{
+		color: #DAE0E6;
+		transition: color .3s;
+	}
 }
 
 .theme-switch input {
@@ -164,11 +218,11 @@ a {
   background-color: #fff;
   bottom: 2px;
   content: "";
-  height: 21px;
+  height: 16px;
   left: 3px;
   position: absolute;
   transition: .4s;
-  width: 21px;
+  width: 16px;
 }
 
 input:checked + .slider {
@@ -176,7 +230,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-  transform: translateX(16px);
+  transform: translateX(21px);
 }
 
 .slider.round {
@@ -245,5 +299,9 @@ input:checked + .slider:before {
 
 	#footer p {
 		margin-bottom:15px;
+	}
+
+	#home-main-box {
+		padding-top:20%;
 	}
 }

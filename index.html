@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html lang="en">
 <html>
 	<head>
 		<title>Home - Greg Siekman</title>
@@ -27,12 +27,10 @@
 	</head>
 
 	<body>
-		<!--<script src="set-theme-color.js"></script>-->
-
-		<div id="content">
+		<div class="content">
 			<img src="IMG_6571.png" alt="Picture of Greg Siekman smiling, wearing white dress shirt and blue blazer" id="id_photo">
 
-			<div id="main-box">
+			<div class="main-box" id="home-main-box">
 				<div id="nametag">
 					<a href=index.html><h1>Greg Siekman</h1></a>
 					<p>Auburn, ME</p>
@@ -42,17 +40,17 @@
 					<p>I am a Learning Technology Specialist currently living in Auburn, Maine. My interests range from technology to education. I am also interested in web development, photography, and music.</p>
 					<br>
 					<p>Learning Technology Support Specialist - Unity Environmental University</p>
-					<h3>Education</h3>
+					<h2>Education</h2>
 					<p>B.S. Business Administration - Southern New Hampshire University</p>
 					<p>A.S. Information Technology - Southern New Hampsire University</p>
 				</div>
 
 				<div id="social-menu">
 					<ul>
-						<a href="mailto:webmaster@siekmang.com" target="_blank" rel="noopener noreferrer"><li><img src="mail_icon.png" alt="Mail icon linking to an email address" class="contact-icon"></li></a>
-						<a href="https://www.linkedin.com/in/siekmang/" target="_blank" rel="noopener noreferrer"><li><img src="linkedin_icon.png" alt="LinkedIn icon linking to a LinkedIn account" class="contact-icon"></li></a>
-						<a href="https://open.spotify.com/artist/2qDoAoEQMg3S119nMWseTo?si=JH_0Z155RT60KR1sidHcbg&nd=1&dlsi=43e4428cfd524ea8" target="_blank" rel="noopener noreferrer"><li><img src="spotify_icon.png" alt="Spotify icon linking to a Spotify artist profile" class="contact-icon"></li></a>
-						<a href="https://bsky.app/profile/siekmang.com" target="_blank" rel="noopener noreferrer"><li><img src="bsky_icon.png" alt="Bluesky icon linking to a Bluesky account" class="contact-icon"></li></a>
+						<li><a href="mailto:webmaster@siekmang.com" target="_blank" rel="noopener noreferrer"><img src="mail_icon.png" alt="Mail icon linking to an email address" class="contact-icon"></a></li>
+						<li><a href="https://www.linkedin.com/in/siekmang/" target="_blank" rel="noopener noreferrer"><img src="linkedin_icon.png" alt="LinkedIn icon linking to a LinkedIn account" class="contact-icon"></a></li>
+						<li><a href="https://open.spotify.com/artist/2qDoAoEQMg3S119nMWseTo?si=JH_0Z155RT60KR1sidHcbg&nd=1&dlsi=43e4428cfd524ea8" target="_blank" rel="noopener noreferrer"><img src="spotify_icon.png" alt="Spotify icon linking to a Spotify artist profile" class="contact-icon"></a></li>
+						<li><a href="https://bsky.app/profile/siekmang.com" target="_blank" rel="noopener noreferrer"><img src="bsky_icon.png" alt="Bluesky icon linking to a Bluesky account" class="contact-icon"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -62,20 +60,32 @@
 		</div>
 
 		<div id="shadow-box"></div>
-		<div class="theme-switch-wrapper">
-			<label class="theme-switch" for="checkbox">
-				<input type="checkbox" id="checkbox" aria-label="Switch visual theme" />
-				<div class="slider round"></div>
-			</label>
-			<div id="enable-text">Dark Mode</div>
+		<div id="dark-switch-hover">
+			<div class="theme-switch-wrapper">
+				<label class="theme-switch" for="checkbox">
+					<input type="checkbox" id="checkbox" aria-label="Switch visual theme" />
+					<div class="slider round"></div>
+				</label>
+				<div id="enable-text">Dark Mode</div>
+			</div>
 		</div>
 
 			<div id="footer">
-				<p>&#169; 2025 Greg Siekman</p>
+				<p>&#169; 2025 Greg Siekman • <a href="privacy.html">Privacy Policy</a></p>
 			</div>
+
+			<!-- Dark Mode Pop-up, still needs a function that will cause it to pop when the user clicks the switch the first time. Opt out will need work
+			<div class="popup" onclick="myFunction()">
+  				<span class="popuptext" id="dark-mode-popup">
+  					Using the dark mode switch causes cookies to be saved to your browser. See <a href="privacy.html">privacy policy</a> for more.
+
+  					Opt Out
+  				</span>
+			</div>-->
 
 		<script src="data-theme.js"></script>
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<!--This is a work-in-progress jQuery script for desired click behavior on mobile.
 		<script>
 		$(document).ready(function() {
 		  $(".content-icon").on("touchend", function(event) {
@@ -84,13 +94,13 @@
 		    var img = $(this);
 
 		    img.closest("a").trigger("touchend");
-		    img.css("filter", "grayscale(0)");
-		    img.css("opacity", "100%");
-		    img.css("transform", "scale(1.2)");
+		    img.css({"filter", "grayscale(0)"});
+		    img.css({"opacity", "100%")};
+		    img.css({"transform", "scale(1.2)"});
 
 			//transition: filter 0.3s ease, transform 0.3s ease;
 		  });
 		});
-	    </script>
+	    </script>-->
 	</body>
 </html>
