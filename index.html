@@ -83,6 +83,7 @@
 
     			var img = $(this);
 
+    			img.closest("a").trigger("touchend");
     			$('.contact-icon').find('a').trigger('click');
     			img.css("filter", "grayscale(0)");
     			img.css("opacity", "100%");
