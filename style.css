@@ -224,6 +224,20 @@ input:checked + .slider:before {
 
 	.theme-switch {
 		margin-bottom:3.5%;
+		height: 15px;
+	}
+
+	.slider:before {
+ 	 height: 11px;
+	  width: 11px;
+	}
+
+	input:checked + .slider:before {
+	  transform: translateX(26px);
+	}
+
+	#checkbox {
+		opacity:0;
 	}
 
 	#footer p {
