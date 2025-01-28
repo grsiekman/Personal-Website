@@ -82,6 +82,8 @@
  		      	event.preventDefault();
 
     			var img = $(this);
+
+    			$('#titleee').find('a').trigger('click');
     			img.css("filter", "grayscale(0)");
     			img.css("opacity", "100%");
     			img.css("transform", "scale(1.2)");
