@@ -77,33 +77,39 @@
 		<script src="data-theme.js"></script>
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script>
-			$(document).ready(function() {
-			  $("#social-menu ul li img").on("touchend", function(event) {
-			    event.stopPropagation();
+		$(document).ready(function() {
+		  var linkOpened = false;
 
-			    if (event.target !== this) {
-			      return;
-			    }
+		  $("#social-menu ul li img").on("touchend", function(event) {
+		    event.stopPropagation();
 
-			    event.preventDefault();
+		    if (event.target !== this || linkOpened) {
+		      return;
+		    }
 
-			    var img = $(this);
-			    var link = img.parent().parent();
+		    event.preventDefault();
 
-			    // Open the link in a new tab
-			    var win = window.open(link.attr("href"), '_blank');
+		    var img = $(this);
+		    var link = img.parent().parent();
 
-			    img.css("filter", "grayscale(0)");
-			    img.css("opacity", "100%");
-			    img.css("transform", "scale(1.2)");
+		    // Open the link in a new tab
+		    var win = window.open(link.attr("href"), '_blank');
 
-			    setTimeout(function() {
-			      img.css("filter", "grayscale(1)");
-			      img.css("opacity", "75%");
-			      img.css("transform", "scale(1)");
-			    }, 500);
-			  });
-			});
+		    img.css("filter", "grayscale(0)");
+		    img.css("opacity", "100%");
+		    img.css("transform", "scale(1.2)");
+
+		    setTimeout(function() {
+		      img.css("filter", "grayscale(1)");
+		      img.css("opacity", "75%");
+		      img.css("transform", "scale(1)");
+
+		      linkOpened = false;
+		    }, 200);
+
+		    linkOpened = true;
+		  });
+		});
 		</script>
 	</body>
 </html>
