@@ -139,7 +139,6 @@ a {
   position: relative;
   height: 25px;
   width: 43px;
-  margin-bottom: 5px;
   -webkit-user-select: none;
 }
 
@@ -208,14 +207,14 @@ input:checked + .slider:before {
   }
 
   #shadow-box {
-	  width: 22vw;
-	  height: 11vw;
+	  width: 21vw;
+	  height: 10vw;
 	  background-color: #666666;
 	  opacity: 75%;
 	  position: fixed;
  	  bottom:1.2%;
 	  border-radius: 28px;
-	  margin-left:66.5%;
+	  margin-left:67%;
 	}
 
   .theme-switch-wrapper {
@@ -224,7 +223,7 @@ input:checked + .slider:before {
 	}
 
 	.theme-switch {
-		margin-bottom:4.5%;
+		margin-bottom:3.5%;
 	}
 
 	#footer p {
