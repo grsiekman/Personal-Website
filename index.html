@@ -78,13 +78,12 @@
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script>
 			$(document).ready(function() {
- 		      $("#social-menu ul li img").on("touchend", function(event) {
+ 		      $(".content-icon").on("touchend", function(event) {
  		      	event.preventDefault();
 
     			var img = $(this);
 
     			img.closest("a").trigger("touchend");
-    			$('.contact-icon').find('a').trigger('click');
     			img.css("filter", "grayscale(0)");
     			img.css("opacity", "100%");
     			img.css("transform", "scale(1.2)");
