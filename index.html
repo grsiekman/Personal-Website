@@ -85,7 +85,7 @@
     			var link = img.parent().parent();
 
    				// Trigger the default behavior of the link
-    			window.location.href = link.attr("href");
+    			var win = window.open(link.attr("href"), '_blank');
 
     			img.css("filter", "grayscale(0)");
     			img.css("opacity", "100%");
