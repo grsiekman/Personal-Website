@@ -82,6 +82,11 @@
  		      	event.preventDefault();
 
     			var img = $(this);
+    			var link = img.parent().parent();
+
+   				// Trigger the default behavior of the link
+    			window.location.href = link.attr("href");
+
     			img.css("filter", "grayscale(0)");
     			img.css("opacity", "100%");
     			img.css("transform", "scale(1.2)");
@@ -90,8 +95,6 @@
       			img.css("filter", "grayscale(1)");
       			img.css("opacity", "50%");
       			img.css("transform", "scale(1)");
-
-      			window.location.href = img.parent().parent().attr("href");
    			    }, 500);
   			  });
 		    });
