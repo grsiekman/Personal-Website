@@ -208,14 +208,14 @@ input:checked + .slider:before {
   }
 
   #shadow-box {
-	  width: 125px;
+	  width: 80px;
 	  height: 60px;
 	  background-color: #666666;
 	  opacity: 75%;
 	  position: fixed;
  	  bottom:1.5%;
 	  border-radius: 28px;
-	  margin-left:67%;
+	  margin-left:66%;
 	  margin-top:130%;
 	}
 
