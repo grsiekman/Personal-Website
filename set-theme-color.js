@@ -7,3 +7,5 @@ function setThemeColor() {
         metaTheme.setAttribute('content', '#415b74');
     }
 }
+
+setThemeColor();
