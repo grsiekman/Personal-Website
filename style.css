@@ -223,6 +223,10 @@ input:checked + .slider:before {
 	  margin-left: 70%;
 	}
 
+	.theme-switch {
+		margin-bottom:4.5%;
+	}
+
 	#footer p {
 		margin-bottom:15px;
 	}
