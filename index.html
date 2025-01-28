@@ -78,12 +78,11 @@
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script>
 			$(document).ready(function() {
- 		      $(".content-icon").on("touchend", function(event) {
- 		      	event.preventDefault();
-
+ 		      $(".content-icon").on("touchend", function(event) 
     			var img = $(this);
 
     			img.closest("a").trigger("touchend");
+ 		      	$(".content-icon").on("touchend", function(event) 
     			img.css("filter", "grayscale(0)");
     			img.css("opacity", "100%");
     			img.css("transform", "scale(1.2)");
