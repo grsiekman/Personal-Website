@@ -51,7 +51,7 @@ function switchTheme(e) {
         } catch (e) {
             console.error('LocalStorage is not available:', e);
         }
-        metaThemeColor.setAttribute('content', LIGHT_THEME_COLOR);
+        metaThemeColor.setAttribute('content', DARK_THEME_COLOR);
     }
     else {
         document.documentElement.setAttribute('data-theme', 'light');
@@ -60,7 +60,7 @@ function switchTheme(e) {
         } catch (e) {
             console.error('LocalStorage is not available:', e);
         }
-        metaThemeColor.setAttribute('content', DARK_THEME_COLOR);
+        metaThemeColor.setAttribute('content', LIGHT_THEME_COLOR);
     }    
 }
 
