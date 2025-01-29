@@ -343,9 +343,9 @@ input:checked + .slider:before {
 	}
 
 	#popup {
-	width:60%;
+	width:85%;
 	/*bottom:2%;*/
-	margin-left:20%;
+	margin-left:5%;
 }
 
 }
