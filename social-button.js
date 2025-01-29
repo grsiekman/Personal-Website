@@ -23,6 +23,17 @@ if (window.matchMedia("(pointer: coarse)").matches) {
         });
     });
 
+    // Add an event listener for visibility change to reset styles when returning to the page
+    document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') {
+            socialButtons.forEach(socialButton => {
+                socialButton.style.filter = 'grayscale(1)';
+                socialButton.style.opacity = '75%';
+                socialButton.style.transform = 'scale(1)';
+            });
+        }
+    });
+
     // Add an event listener for beforeunload to reset styles
     window.addEventListener('beforeunload', () => {
         socialButtons.forEach(socialButton => {
