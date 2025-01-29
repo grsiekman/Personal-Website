@@ -2,12 +2,14 @@
   --background-color: #415b74;
   --box-color:#edf0f2;
   --font-color: #0e141a;
+  --popup-color: rgba(203,215,219, .6);
 }
 
 [data-theme="dark"] {
 	--background-color: #273745;
 	--box-color:#6d849a;
 	--font-color: #e2e6eb;
+	--popup-color: rgb(138,156,174, .6);
 }
 
 body {
@@ -68,6 +70,12 @@ h1{
 	font-size:2.8em;
 	letter-spacing:0.12em;
 	color: var(--font-color);
+}
+
+h2 {
+	font-family: "Lora", serif;
+	font-size:1.35em;
+	margin-bottom:.4%;
 }
 
 .privacy-h1 {
@@ -154,6 +162,7 @@ a {
 
 #privacy-text {
 	margin: 1% 2% 0;
+	line-height:150%;
 }
 
 #privacy-main-box a {
@@ -239,6 +248,34 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+#popup {
+	display:none;
+	position: absolute;
+	text-align: center;
+	width:42%;
+	bottom:2%;
+	margin-left:29%;
+	padding: .25% 0 .5% 0;
+	background-color:var(--popup-color);
+	color: var(--font-color);
+	border-radius:14px;
+	font-family: "Lora", serif;
+	font-size:.85em;
+}
+
+#popup a {
+	color: #273745;
+	text-decoration: underline;
+	text-decoration-thickness: .3px;
+}
+
+#popup-dismiss-button {
+	-webkit-user-select: none;
+	font-size:1.4em;
+	margin-left:5%;
+
 }
 
 @media only screen and (max-width: 875px) {

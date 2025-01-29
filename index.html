@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>Home - Greg Siekman</title>
-		<link rel="stylesheet" href="style.css?version1.16">
+		<link rel="stylesheet" href="style.css?version1.2">
 		<meta charset="UTF-8">
 		<meta name="description" content="Personal Website of Greg Siekman">
 		<meta name="keywords" content="">
@@ -23,7 +23,6 @@
 		<meta name="apple-mobile-web-app-title" content="Greg Siekman" />
 		<link rel="manifest" href="favicon/site.webmanifest" />
 		<meta name="theme-color" constant="#415b74" />
-		<script src="set-theme-color.js"></script>
 	</head>
 
 	<body>
@@ -74,14 +73,11 @@
 				<p>&#169; 2025 Greg Siekman • <a href="privacy.html">Privacy Policy</a></p>
 			</div>
 
-			<!-- Dark Mode Pop-up, still needs a function that will cause it to pop when the user clicks the switch the first time. Opt out will need work
-			<div class="popup" onclick="myFunction()">
+			<div id="popup">
   				<span class="popuptext" id="dark-mode-popup">
-  					Using the dark mode switch causes cookies to be saved to your browser. See <a href="privacy.html">privacy policy</a> for more.
-
-  					Opt Out
+  					<span id="popup-text">Your theme preferences will be saved to local storage. See <a href="privacy.html">privacy policy</a> for more.</span> <span id="popup-dismiss-button">x</span>
   				</span>
-			</div>-->
+			</div>
 
 		<script src="data-theme.js"></script>
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
