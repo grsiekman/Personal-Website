@@ -11,3 +11,12 @@ socialButton.addEventListener('touchstart', () => {
         socialButton.style.transform = 'scale(1)';
     }, 500);
 });
+
+document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') {
+        // Revert the image style properties when the user returns to the tab
+        socialButton.style.filter = 'grayscale(1)';
+        socialButton.style.opacity = '75%';
+        socialButton.style.transform = 'scale(1)';
+    }
+});
