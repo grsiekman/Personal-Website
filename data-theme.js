@@ -8,11 +8,9 @@ const LIGHT_THEME_COLOR = '#415b74';
 //This function sets the website theme based on system preferences
 function setThemeBasedOnSystemPreference() {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.documentElement.setAttribute('lang', 'en');
         document.documentElement.setAttribute('data-theme', 'dark');
         toggleSwitch.checked = true;
     } else {
-        document.documentElement.setAttribute('lang', 'en');
         document.documentElement.setAttribute('data-theme', 'light');
         toggleSwitch.checked = false;
     }
@@ -26,18 +24,18 @@ if (currentTheme) {
     if (currentTheme === 'dark') {
         toggleSwitch.checked = true;
     }
- } else {
+} else {
     setThemeBasedOnSystemPreference();
- }
+}
 
 // This function controls the privacy alert popup, allowing it to pop up only the first time the user clicks the switch
 function privacyPopup() {
     const clickHistory = localStorage.getItem('clickHist');
     if (clickHistory === null) {
-    document.querySelector('#popup').style.display = 'unset';
-    try {
-        localStorage.setItem('clickHist', 'clicked');
-    } catch (e) {
+        document.querySelector('#popup').style.display = 'unset';
+        try {
+            localStorage.setItem('clickHist', 'clicked');
+        } catch (e) {
             console.error('LocalStorage is not available:', e);
         }
     }
@@ -54,8 +52,7 @@ function switchTheme(e) {
             console.error('LocalStorage is not available:', e);
         }
         metaThemeColor.setAttribute('content', DARK_THEME_COLOR);
-    }
-    else {
+    } else {
         document.documentElement.setAttribute('data-theme', 'light');
         try {
             localStorage.setItem('theme', 'light');
@@ -63,18 +60,18 @@ function switchTheme(e) {
             console.error('LocalStorage is not available:', e);
         }
         metaThemeColor.setAttribute('content', LIGHT_THEME_COLOR);
-    }    
+    }
 }
 
 //This looks for a switch click and triggers the setTheme function
-if(toggleSwitch) {
+if (toggleSwitch) {
     toggleSwitch.addEventListener('change', switchTheme, false);
 }
 
 function buttonClick(event) {
-        document.querySelector('#popup').style.display = 'none';
+    document.querySelector('#popup').style.display = 'none';
 }
 
-if(dismissButton) {
+if (dismissButton) {
     dismissButton.addEventListener('click', buttonClick, false);
 }
