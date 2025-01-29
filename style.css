@@ -146,6 +146,7 @@ p {
 		filter: grayscale(1);
  	  opacity: 75%;
  	  transform: scale(1);
+ 	  transition: filter 0.1s ease, transform 0.1s ease;
   }
 
 	#social-menu ul li img:active {
