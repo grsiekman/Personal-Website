@@ -143,19 +143,19 @@ p {
 }
 
 @media (pointer:coarse) {
-	#social-menu ul li img:active {
-		filter: grayscale(0);
-	  opacity: 100%;
-	  transform: scale(1.2);
-	  transition: filter 0.3s ease, transform 0.3s ease;
-	}
-
 	#social-menu ul li img:not(:active) {
 		filter: grayscale(1);
   	width: 7%;
  	  opacity: 75%;
  	  transition: filter 0.3s ease, transform 0.3s ease;
   }
+	
+	#social-menu ul li img:active {
+		filter: grayscale(0);
+	  opacity: 100%;
+	  transform: scale(1.2);
+	  transition: filter 0.3s ease, transform 0.3s ease;
+	}
 }
 
 #spacer {
