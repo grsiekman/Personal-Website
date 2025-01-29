@@ -1,9 +1,11 @@
 const images = document.querySelectorAll('#social-menu ul li img');
 
-window.addEventListener('pageshow', () => {
-  images.forEach(image => {
-    image.classList.remove('active');
-  });
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'hidden') {
+    images.forEach(image => {
+      image.classList.remove('active');
+    });
+  }
 });
 
 images.forEach(image => {
