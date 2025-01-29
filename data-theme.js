@@ -8,9 +8,11 @@ const LIGHT_THEME_COLOR = '#415b74';
 //This function sets the website theme based on system preferences
 function setThemeBasedOnSystemPreference() {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute('lang', 'en');
         document.documentElement.setAttribute('data-theme', 'dark');
         toggleSwitch.checked = true;
     } else {
+        document.documentElement.setAttribute('lang', 'en');
         document.documentElement.setAttribute('data-theme', 'light');
         toggleSwitch.checked = false;
     }

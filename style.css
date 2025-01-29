@@ -2,14 +2,16 @@
   --background-color: #415b74;
   --box-color:#edf0f2;
   --font-color: #0e141a;
-  --popup-color: rgba(203,215,219, .6);
+  --popup-color: rgba(203,215,219, .75);
+  --popup-dismiss-color: rgba(65,91,116, .75);
 }
 
 [data-theme="dark"] {
 	--background-color: #273745;
 	--box-color:#6d849a;
 	--font-color: #e2e6eb;
-	--popup-color: rgb(138,156,174, .6);
+	--popup-color: rgb(138,156,174, .75);
+	--popup-dismiss-color: rgba(65,91,116, .75);
 }
 
 body {
@@ -343,14 +345,17 @@ input:checked + .slider:before {
 	}
 
 	#popup {
-	width:85%;
+	width:90%;
 	bottom: -5%;
-	margin-left:5%;
+	margin-left:2.5%;
 }
 
 #popup-dismiss-button {
 	/* Here is where I will style the dismiss X to look more clickable for mobile */
-
+	background-color:var(--popup-dismiss-color);
+	color:#e2e6eb;
+	padding:0px 8px 3px 8px;
+	border-radius:10px;
 }
 
 }
