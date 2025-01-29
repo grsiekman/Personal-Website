@@ -5,7 +5,9 @@ socialButton.addEventListener('touchstart', () => {
 });
 
 socialButton.addEventListener('touchend', () => {
-	setTimeout(() => {
-      socialButton.classList.remove('active');
-    }, 500);
+	
 });
+
+setTimeout(() => {
+    socialButton.classList.remove('active');
+}, 500);
