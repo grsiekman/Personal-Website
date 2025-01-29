@@ -344,8 +344,13 @@ input:checked + .slider:before {
 
 	#popup {
 	width:85%;
-	/*bottom:2%;*/
+	bottom: -5%;
 	margin-left:5%;
+}
+
+#popup-dismiss-button {
+	/* Here is where I will style the dismiss X to look more clickable for mobile */
+
 }
 
 }
