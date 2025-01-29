@@ -142,9 +142,8 @@ p {
   transition: filter 0.3s ease, transform 0.3s ease;
 }
 
-/*	#social-menu ul li img:not(:active) {
+  #social-menu ul li img:not(:active) {
 		filter: grayscale(1);
-  	width: 7%;
  	  opacity: 75%;
  	  transition: filter 0.3s ease, transform 0.3s ease;
   }
@@ -155,7 +154,7 @@ p {
 	  transform: scale(1.2);
 	  transition: filter 0.1s ease, transform 0.1s ease;
 	}
-}*/
+}
 
 #spacer {
   flex-grow: 1;
