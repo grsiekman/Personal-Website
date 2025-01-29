@@ -1,21 +1,34 @@
-const socialButton = document.querySelector('#social-menu ul li img');
+if (window.matchMedia("(pointer: coarse)").matches) {
+    const socialButtons = document.querySelectorAll('#social-menu ul li img');
 
-socialButton.addEventListener('touchstart', () => {
-    socialButton.style.filter = 'grayscale(0)';
-    socialButton.style.opacity = '100%';
-    socialButton.style.transform = 'scale(1.2)';
-});
+    socialButtons.forEach(socialButton => {
+        socialButton.addEventListener('pointerdown', () => {
+            socialButton.style.filter = 'grayscale(0)';
+            socialButton.style.opacity = '100%';
+            socialButton.style.transform = 'scale(1.2)';
+        });
 
-socialButton.addEventListener('touchend', () => {
-    setTimeout(() => {
-        socialButton.style.filter = 'grayscale(1)';
-        socialButton.style.opacity = '75%';
-        socialButton.style.transform = 'scale(1)';
-    }, 500);
-});
+        socialButton.addEventListener('pointerup', () => {
+            setTimeout(() => {
+                socialButton.style.filter = 'grayscale(1)';
+                socialButton.style.opacity = '75%';
+                socialButton.style.transform = 'scale(1)';
+            }, 500);
+        });
 
-window.addEventListener('beforeunload', () => {
-    socialButton.style.filter = 'grayscale(1)';
-    socialButton.style.opacity = '75%';
-    socialButton.style.transform = 'scale(1)';
-});
+        socialButton.addEventListener('blur', () => {
+            socialButton.style.filter = 'grayscale(1)';
+            socialButton.style.opacity = '75%';
+            socialButton.style.transform = 'scale(1)';
+        });
+    });
+
+    // Add an event listener for beforeunload to reset styles
+    window.addEventListener('beforeunload', () => {
+        socialButtons.forEach(socialButton => {
+            socialButton.style.filter = 'grayscale(1)';
+            socialButton.style.opacity = '75%';
+            socialButton.style.transform = 'scale(1)';
+        });
+    });
+}
