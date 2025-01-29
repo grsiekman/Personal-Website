@@ -142,18 +142,10 @@ p {
   transition: filter 0.3s ease, transform 0.3s ease;
 }
 
-  #social-menu ul li img:not(:active) {
-		filter: grayscale(1);
- 	  opacity: 75%;
- 	  transform: scale(1);
- 	  transition: filter 0.1s ease, transform 0.1s ease;
-  }
-
 	#social-menu ul li img:active {
 		filter: grayscale(0);
 	  opacity: 100%;
 	  transform: scale(1.2);
-	  transition: filter 0.1s ease, transform 0.1s ease;
 	}
 }
 
