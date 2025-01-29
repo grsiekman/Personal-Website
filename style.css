@@ -353,9 +353,8 @@ input:checked + .slider:before {
 	/* Here is where I will style the dismiss X to look more clickable for mobile */
 	background-color:var(--popup-dismiss-color);
 	color:#e2e6eb;
-	padding:0px 8px 3px 8px;
+	padding:0px 8px 2px 8px;
 	border-radius:10px;
-	margin-bottom:1%;
 }
 
 }
