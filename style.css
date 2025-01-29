@@ -254,7 +254,7 @@ input:checked + .slider:before {
 
 #popup {
 	display:none;
-	position: absolute;
+	position: fixed;
 	text-align: center;
 	width:42%;
 	bottom:2%;
@@ -346,7 +346,6 @@ input:checked + .slider:before {
 
 	#popup {
 	width:90%;
-	bottom: -5%;
 	margin-left:2.5%;
 }
 
