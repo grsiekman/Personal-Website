@@ -341,4 +341,11 @@ input:checked + .slider:before {
 	#home-main-box {
 		padding-top:20%;
 	}
+
+	#popup {
+	width:60%;
+	/*bottom:2%;*/
+	margin-left:20%;
+}
+
 }
