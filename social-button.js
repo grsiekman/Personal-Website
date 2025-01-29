@@ -1,11 +1,11 @@
 const socialButton = document.querySelector('#social-menu ul li img');
 
 socialButton.addEventListener('touchstart', () => {
-	setTimeout(() => {
-		socialButton.classList.add('active');
-	}, 500;)
+	socialButton.classList.add('active');
 });
 
 socialButton.addEventListener('touchend', () => {
+	setTimeout(() => {
       image.classList.remove('active');
+    }, 500);
 });
