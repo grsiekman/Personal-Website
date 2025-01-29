@@ -348,14 +348,16 @@ input:checked + .slider:before {
 	#popup {
 	width:90%;
 	margin-left:2.5%;
-}
+	}
 
-#popup-dismiss-button {
-	/* Here is where I will style the dismiss X to look more clickable for mobile */
-	background-color:var(--popup-dismiss-color);
-	padding:0px 8px 0px 8px;
-	color:#e2e6eb;
-	border-radius:10px;
-}
+	#popup-dismiss-button {
+		/* Here is where I will style the dismiss X to look more clickable for mobile */
+		background-color:var(--popup-dismiss-color);
+		padding:0px 8px 0px 8px;
+		color:#e2e6eb;
+		border-radius:10px;
+		display: inline-flex;
+	  align-items: center;
+	}
 
 }
