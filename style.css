@@ -3,7 +3,7 @@
   --box-color:#edf0f2;
   --font-color: #0e141a;
   --popup-color: rgba(203,215,219, .75);
-  --popup-dismiss-color: rgba(65,91,116, .75);
+  --popup-dismiss-color: rgba(65,91,116, .7);
 }
 
 [data-theme="dark"] {
@@ -11,7 +11,7 @@
 	--box-color:#6d849a;
 	--font-color: #e2e6eb;
 	--popup-color: rgb(138,156,174, .75);
-	--popup-dismiss-color: rgba(65,91,116, .75);
+	--popup-dismiss-color: rgba(65,91,116, .7);
 }
 
 body {
