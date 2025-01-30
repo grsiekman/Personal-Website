@@ -4,6 +4,8 @@
   --font-color: #0e141a;
   --popup-color: rgba(203, 215, 219, 0.75);
   --popup-dismiss-color: rgba(65, 91, 116, 0.7);
+  --privacy-text-color: #3C5680;
+  --privacy-text-hover-color: #3d4b58;
 }
 
 [data-theme="dark"] {
@@ -12,6 +14,8 @@
   --font-color: #e2e6eb;
   --popup-color: rgb(138, 156, 174, 0.75);
   --popup-dismiss-color: rgba(65, 91, 116, 0.7);
+  --privacy-text-color: #d3cfd8;
+  --privacy-text-hover-color: 9ea1a5;
 }
 
 body {
@@ -185,9 +189,13 @@ p {
 }
 
 #privacy-main-box a {
-  color: #273745;
+  color: var(--privacy-text-color);
   text-decoration: underline;
   text-decoration-thickness: 0.5px;
+}
+
+#privacy-main-box a:hover {
+  color: var(--privacy-text-hover-color);
 }
 
 #return-home {
