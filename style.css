@@ -226,13 +226,15 @@ p {
 
 @media screen and (min-width: 800px) {
   #enable-text {
-    color: var(--background-color);
-    transition: color 0.15s;
+    opacity: 0;
+    transition: opacity 0.15s;
   }
 
   #dark-switch-hover:hover #enable-text {
     color: #dae0e6;
-    transition: color 0.3s;
+    opacity:1;
+    filter: drop-shadow(.3px .3px .1px black);
+    transition: opacity 0.3s;
   }
 }
 
