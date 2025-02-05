@@ -226,6 +226,7 @@ p {
 
 @media screen and (min-width: 800px) {
   #enable-text {
+    font-size: 13px;
     opacity: 0;
     transition: opacity 0.15s;
   }
@@ -317,6 +318,9 @@ input:checked + .slider:before {
   margin-bottom: 0.25vw;
   margin-left: 0.5vw;
   margin-right: 0.5vw;
+}
+#popup-x:hover {
+  cursor:pointer;
 }
 
 #popup-text {
