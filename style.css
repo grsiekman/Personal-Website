@@ -349,6 +349,9 @@ input:checked + .slider:before {
   margin-left: 0.42vw;
   margin-right: 0.5vw;
 }
+#popup-x:hover {
+  cursor:pointer;
+}
 
 #popup-x:hover {
   cursor:pointer;
