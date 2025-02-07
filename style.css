@@ -6,6 +6,7 @@
   --popup-dismiss-color: rgba(65, 91, 116, 0.7);
   --privacy-text-color: #3C5680;
   --privacy-text-hover-color: #3d4b58;
+  --menu-pill-color: rgba(72,73,102,.15);
 }
 
 [data-theme="dark"] {
@@ -16,6 +17,7 @@
   --popup-dismiss-color: rgba(65, 91, 116, 0.7);
   --privacy-text-color: #d3cfd8;
   --privacy-text-hover-color: #9ea1a5;
+  --menu-pill-color: rgba(26,17,16,.15);
 }
 
 body {
@@ -38,10 +40,8 @@ body {
 }
 
 #id_photo {
-  align: middle;
   border-radius: 50%;
   max-width: 17%;
-  height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -55,6 +55,7 @@ body {
 
 #home-main-box {
   padding-top: 9%;
+  padding-bottom:1px;
 }
 
 #privacy-main-box {
@@ -63,30 +64,27 @@ body {
 }
 
 #nametag {
-  font-family: "Bebas Neue", serif;
-  display: inline;
-  width: 75%;
   text-align: center;
 }
 
 h1 {
   font-family: "Bebas Neue", serif;
   margin-top: 1%;
-  margin-bottom: 0;
+  margin-bottom: .2%;
   font-size: 2.8em;
   letter-spacing: 0.12em;
   color: var(--font-color);
 }
 
-h2 {
+p, .site-nav {
   font-family: "Lora", serif;
-  font-size: 1.35em;
-  margin-bottom: 0.4%;
+  color: var(--font-color);
 }
 
 .privacy-h1 {
   text-align: center;
   margin-top:2%;
+  margin-bottom:.25%;
 }
 
 a {
@@ -101,12 +99,16 @@ a {
 }
 
 .menu-pill {
-  /*background-color:#fff;*/
+  background-color:var(--menu-pill-color);
+  padding: 8px 10px;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content; 
 }
 
 .site-nav {
   list-style-type: none;
-  font-family: "Lora", serif;
   font-size: .9375em;
   display:flex;
   justify-content: center;
@@ -127,28 +129,17 @@ a {
 }
 
 #info-box {
-  font-family: "Lora", serif;
   margin: 1.5% 5% 0 5%;
 }
 
-#info-box p, #privacy-text {
+#info-box p{
   margin: 0.6% auto;
   line-height: 140%;
   font-size:0.9375em;
-  font-family: "Lora", serif;
-}
-
-#main-box h1,
-h2,
-h3,
-p {
-  color: var(--font-color);
 }
 
 #social-menu {
-  display: inline-block;
   text-align: center;
-  list-style-type: none;
 }
 
 #social-menu ul {
@@ -191,7 +182,6 @@ p {
 }
 
 #footer p {
-  font-family: "Lora", serif;
   color: #dae0e6;
   font-size: 0.75em;
   margin-left: 0.75%;
@@ -200,7 +190,6 @@ p {
 }
 
 #footer a {
-  font-family: "Lora", serif;
   color: #dae0e6;
   text-decoration: underline;
   text-decoration-thickness: 0.5px;
@@ -213,6 +202,7 @@ p {
 #privacy-text {
   margin: 1% 5% 6%;
   line-height: 150%;
+  font-size:0.9375em;
 }
 
 #privacy-main-box p a {
@@ -236,7 +226,6 @@ p {
   position: fixed;
   bottom: 1.5%;
   margin-left: 90%;
-  font-family: "Lora", serif;
   font-size: 1vw;
   color: #dae0e6;
 }
@@ -310,17 +299,16 @@ input:checked + .slider:before {
 
 #popup {
   display: none;
-  position: fixed;
-  text-align: center;
-  width: 42%;
+  position: sticky;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
   bottom: 2%;
-  margin-left: 29%;
   padding: 0.4% 0 0.1% 0;
   background-color: var(--popup-color);
   color: var(--font-color);
   border-radius: 14px;
-  font-family: "Lora", serif;
-  font-size: 0.85em;
+  font-size: 0.9em;
 }
 
 #popup a {
@@ -331,15 +319,14 @@ input:checked + .slider:before {
 
 #popup-dismiss-button {
   -webkit-user-select: none;
-  color: var(--font-color);
   font-size: 1.1em;
   background-color: var(--popup-dismiss-color);
   border-radius: 50%;
   float: right;
   margin-right: 0.7vw;
   margin-left: 0.5vw;
-  width:3%;
-  margin-top: -.4%;
+  width:fit-content;
+  margin-top: -.6%;
   margin-bottom: .25%;
 }
 
@@ -349,10 +336,6 @@ input:checked + .slider:before {
   margin-left: 0.42vw;
   margin-right: 0.5vw;
 }
-#popup-x:hover {
-  cursor:pointer;
-}
-
 #popup-x:hover {
   cursor:pointer;
 }
@@ -385,7 +368,7 @@ input:checked + .slider:before {
 
   #shadow-box {
     width: 16.5vw;
-    height: 7.5vw;
+    height: 10vw;
     background-color: #666666;
     opacity: 65%;
     position: fixed;
