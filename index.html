@@ -23,6 +23,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Greg Siekman" />
     <link rel="manifest" href="favicon/site.webmanifest" />
+    <meta name="theme-color" content="#ffffff" />
 </head>
 
 <body>
@@ -31,9 +32,13 @@
 
         <div class="main-box" id="home-main-box" role="main">
             <div id="nametag" role="banner">
-                <a href=index.html>
-                    <h1>Greg Siekman</h1>
-                </a>
+                <h1>Greg Siekman</h1>
+                <div class="menu-pill">
+                    <ul class="site-nav">
+                        <li class="site-nav-item"><a href="index.html">Home</a></li>
+                        <li class="site-nav-item"><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
             </div>
 
             <div id="info-box">
@@ -86,7 +91,7 @@
         <span class="popuptext" id="dark-mode-popup">
             <span id="popup-dismiss-button">
                 <span id="popup-x">
-                    <p>x</p>
+                    <p aria-label="Close privacy popup.">x</p>
                 </span>
             </span>
             <span id="popup-text">Your theme preferences will be saved to local storage. See <a href="privacy.html">privacy policy</a> for more.</span>
