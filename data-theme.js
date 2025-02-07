@@ -9,9 +9,11 @@ const LIGHT_THEME_COLOR = '#415b74';
 function setThemeBasedOnSystemPreference() {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.documentElement.setAttribute('data-theme', 'dark');
+        metaThemeColor.setAttribute('content', DARK_THEME_COLOR);
         toggleSwitch.checked = true;
     } else {
         document.documentElement.setAttribute('data-theme', 'light');
+        metaThemeColor.setAttribute('content', LIGHT_THEME_COLOR);
         toggleSwitch.checked = false;
     }
 }
