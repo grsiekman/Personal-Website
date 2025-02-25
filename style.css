@@ -300,10 +300,9 @@ input:checked + .slider:before {
 
 #popup {
   display: none;
-  position: sticky;
-  margin-left: auto;
-  margin-right: auto;
-  width: fit-content;
+  position: fixed;
+  left:50%;
+  transform: translateX(-50%);
   bottom: 2%;
   padding: 0.4% 0 0.1% 0;
   background-color: var(--popup-color);
@@ -326,15 +325,15 @@ input:checked + .slider:before {
   float: right;
   margin-right: 0.7vw;
   margin-left: 0.5vw;
-  width:fit-content;
-  margin-top: -.6%;
+  width:20px;
+  margin-top: -.4%;
   margin-bottom: .25%;
 }
 
 #popup-x p {
-  margin-top: .1vw;
-  margin-bottom: 0.25vw;
-  margin-left: 0.42vw;
+  margin-top: -.05vw;
+  margin-bottom: 0.15vw;
+  margin-left: 0.4vw;
   margin-right: 0.5vw;
 }
 #popup-x:hover {
