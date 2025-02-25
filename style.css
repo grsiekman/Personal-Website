@@ -121,7 +121,8 @@ a {
 }
 
 .site-nav-item a {
-  color: var(--privacy-text-color);
+  color: var(--font-color);
+  font-weight: 515;
 }
 
 .site-nav-item a:hover {
