@@ -351,8 +351,8 @@ input:checked + .slider:before {
   cursor:pointer;
 }
 
-#popup-text {
-  margin-left: 2.25vw;
+#popup-text, #popup-text a {
+  padding-left: 2.25vw;
 }
 
 .links-page-home-link {
@@ -473,7 +473,7 @@ input:checked + .slider:before {
     font-size: 1.1em;
     margin-top:1.5%;
     margin-right:1%;
-    width:4%;
+    width:4.75%;
   }
 
   #popup-dismiss-button p {
@@ -483,9 +483,9 @@ input:checked + .slider:before {
   #popup-x {
     display: inline-grid;
     align-content: center;
-    margin-left: 0.3vw;
+    margin-left: 0.67vw;
     margin-right: 0.3vw;
-    margin-top: 0;
+    margin-top: -.3vw;
     margin-bottom: 0.3vw;
   }
 }
