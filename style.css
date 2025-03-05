@@ -399,28 +399,6 @@ input:checked + .slider:before {
   justify-content: center;
 }
 
-#error-page-content {
-  text-align:center;
-  padding-top:5px;
-  padding-bottom: 20px;
-}
-
-#error-page-button {
-  margin-top:20px;
-  width:125px;
-  height:40px;
-  border-radius: 20px;
-  font-family: "Lora", serif;
-  background-color:var(--menu-pill-color);
-  border:none;
-  color: var(--font-color);
-}
-
-#error-page-button:hover {
-  cursor: pointer;
-  filter: brightness(0);
-}
-
 @media only screen and (max-width: 875px) {
   .theme-switch-wrapper {
     font-size: 1.6vw;
