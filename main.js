@@ -189,6 +189,6 @@ if (window.matchMedia("(pointer:coarse)").matches) {
     links.forEach(link => {
         link.addEventListener('pointerdown', () => {
             navigator.vibrate(100);
-        })
+        });
     });
 }
