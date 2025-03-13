@@ -149,11 +149,12 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('#lsWipe').addEventListener('click', storageWipe, false);
 });
 
+const links = document.querySelectorAll('.link-menu-div');
+
 /*This handles button behavior on my links page. The first if checks for
 the user using a device with a fine poiner(not a touchscreen device), and then sets
 some constants.*/
 if (window.matchMedia("(pointer: fine)").matches) {
-    const links = document.querySelectorAll('.link-menu-div');
     const hoverStyle = {
         transform: 'scale(1.06) translateX(-47.5%)',
         transition: 'all .2s',
@@ -181,5 +182,13 @@ style based on those events*/
         link.addEventListener("mousedown", () => {
             Object.assign(link.style, clickStyle);
         });
+    });
+}
+
+if (window.matchMedia("(pointer:coarse)").matches) {
+    links.forEach(link => {
+        link.addEventListener('pointerdown', () => {
+            navigator.vibrate(100);
+        })
     });
 }

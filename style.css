@@ -89,9 +89,20 @@ h1 {
   display:contents;
 }
 
-p, .site-nav, #links-menu p {
+p, .site-nav, #links-menu p, ul li, h2, #privacy-text {
   font-family: "Lora", serif;
   color: var(--font-color);
+  font-size:15.2px;
+}
+
+h2 {
+  font-size: 1.1em;
+  margin-bottom:0;
+}
+
+.home-text-list {
+  margin-top:8px;
+  list-style-type: circle;
 }
 
 .privacy-h1 {
@@ -159,6 +170,7 @@ a {
 
 #social-menu ul {
   padding-inline-start: 0;
+  margin-top:20px;
 }
 
 #social-menu ul li {
@@ -222,7 +234,6 @@ a {
 #privacy-text {
   margin: 1% 5% 6%;
   line-height: 150%;
-  font-size:0.9375em;
 }
 
 #privacy-main-box p a {
