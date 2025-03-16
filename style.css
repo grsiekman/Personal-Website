@@ -236,13 +236,14 @@ a {
   line-height: 150%;
 }
 
-#privacy-main-box p a {
+#privacy-main-box p a,  #info-box a {
   color: var(--privacy-text-color);
   text-decoration: underline;
   text-decoration-thickness: 0.5px;
+  font-weight: bold;
 }
 
-#privacy-main-box a:hover {
+#privacy-main-box a:hover,  #info-box a:hover {
   color: var(--privacy-text-hover-color);
 }
 
@@ -267,6 +268,7 @@ a {
   height: 20px;
   width: 43px;
   -webkit-user-select: none;
+  user-select: none;
   margin-bottom: 2%;
 }
 
@@ -349,6 +351,7 @@ input:checked + .slider:before {
 
 #popup-dismiss-button {
   -webkit-user-select: none;
+  user-content: none;
   font-size: 1.1em;
   background-color: var(--popup-dismiss-color);
   border-radius: 50%;

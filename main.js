@@ -93,7 +93,6 @@ if (window.matchMedia("(pointer: coarse)").matches) {
             socialButton.style.filter = 'grayscale(0)';
             socialButton.style.opacity = '100%';
             socialButton.style.transform = 'scale(1.2)';
-            navigator.vibrate(100);
         });
 
         socialButton.addEventListener('pointerup', () => {
@@ -182,14 +181,6 @@ style based on those events*/
 
         link.addEventListener("mousedown", () => {
             Object.assign(link.style, clickStyle);
-        });
-    });
-}
-
-if (window.matchMedia("(pointer:coarse)").matches) {
-    links.forEach(link => {
-        link.addEventListener('pointerdown', () => {
-            navigator.vibrate(100);
         });
     });
 }
