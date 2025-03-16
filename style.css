@@ -414,6 +414,24 @@ input:checked + .slider:before {
   justify-content: center;
 }
 
+@media (max-resolution: 167dpi) and (pointer:fine) {
+h1{
+  font-size:3.8em;
+}
+
+  p, .site-nav, #links-menu p, ul li, h2, #privacy-text {
+    font-size: 18.3px;
+  }
+
+  #popup-x p {
+    margin-left: 0.28vw;
+  }
+
+  #footer p {
+    font-size: .8em;
+  }
+}
+
 @media only screen and (max-width: 875px) {
   .theme-switch-wrapper {
     font-size: 1.6vw;
