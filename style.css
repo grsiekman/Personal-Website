@@ -352,6 +352,7 @@ input:checked + .slider:before {
 #popup-dismiss-button {
   -webkit-user-select: none;
   user-content: none;
+  user-select: none;
   font-size: 1.1em;
   background-color: var(--popup-dismiss-color);
   border-radius: 50%;
