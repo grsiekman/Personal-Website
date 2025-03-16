@@ -267,6 +267,7 @@ a {
   height: 20px;
   width: 43px;
   -webkit-user-select: none;
+  user-select: none;
   margin-bottom: 2%;
 }
 
@@ -349,6 +350,7 @@ input:checked + .slider:before {
 
 #popup-dismiss-button {
   -webkit-user-select: none;
+  user-select:none;
   font-size: 1.1em;
   background-color: var(--popup-dismiss-color);
   border-radius: 50%;
