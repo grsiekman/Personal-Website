@@ -390,7 +390,7 @@ input:checked + .slider:before {
   margin-bottom: 50px;
 }
 
-.link-menu-div{
+.link-menu-div {
   list-style-type: none;
   margin-top: 15px;
   margin-bottom:15px;
@@ -403,6 +403,17 @@ input:checked + .slider:before {
   transition: all .2s;
 }
 
+.link-submenu-div {
+  list-style-type: none;
+  margin-top: 15px;
+  width:17.5vw;
+  background-color: var(--background-color-links);
+  border-radius: 12px;
+  position: sticky;
+  left:50%;
+  transform: translateX(-50%);
+  transition: all .2s;
+}
 #links-menu div a {
   display:block;
   padding: 15px 0px;
@@ -414,7 +425,38 @@ input:checked + .slider:before {
   justify-content: center;
 }
 
-@media (max-resolution: 167dpi) and (pointer:fine) {
+#links-more-button {
+  position: sticky;
+  left: 50%;
+  transform: translate(-50%);
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#links-more-button:hover {
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#links-more-button p:hover {
+  color: var(--privacy-text-hover-color);
+}
+
+#link-more {
+  display: none;
+}
+
+#link-more {
+  display: none; /* Use CSS Grid for layout */
+  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+  column-gap: 45%; /* Optional: Add spacing between items */
+  transform: translate(-11.3%);
+}
+@media (max-resolution: 1dppx) and (pointer:fine) {
 h1{
   font-size:3.8em;
 }
