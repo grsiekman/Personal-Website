@@ -215,6 +215,7 @@ linksMore.addEventListener('pointerdown', () => {
     } else {
         linksMoreDiv.style.display = 'none';
         linksMore.innerHTML = '<p>More ↓</p>';
+        event.preventDefault(); // Prevent default behavior like text selection
         window.scrollTo({ top: currentScroll, behavior: 'smooth' }); // Smoothly adjust scroll
     }
 });
