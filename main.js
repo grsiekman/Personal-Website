@@ -201,11 +201,18 @@ if (window.matchMedia("(pointer: fine)").matches) {
     });
 }
 
+//These are variables for the below functions that handle the more/less button on the links page
 const linksMore = document.getElementById('links-more-button');
 const linksMoreDiv = document.getElementById('link-more');
 
+//This sets the initial state of the more links div to none
 linksMoreDiv.style.display = 'none';
 
+//This handles the more/less button on the links page. It checks for a pointerdown event
+//and then checks the current state of the linksMoreDiv. If it's none, it sets it to grid
+//and changes the button text to less. If it's not none, it sets it to none and changes
+//the button text to more. It also prevents default behavior like text selection and
+//smoothly scrolls back to the current scroll position.
 linksMore.addEventListener('pointerdown', () => {
     const currentScroll = window.scrollY; // Get current scroll position
 

@@ -437,8 +437,6 @@ input:checked + .slider:before {
   padding:6px 15px;
   background-color: var(--background-color-links);
   border-radius: 12px;
-  transition: transform 0.1s ease; /* Smooth transition for scaling */
-  transform-origin: center; /* Ensure scaling happens from the center */
 }
 
 #links-more-button p {
