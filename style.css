@@ -434,6 +434,15 @@ input:checked + .slider:before {
   padding: 5px;
   -webkit-user-select: none;
   user-select: none;
+  padding:6px 15px;
+  background-color: var(--background-color-links);
+  border-radius: 12px;
+  transition: transform 0.1s ease; /* Smooth transition for scaling */
+  transform-origin: center; /* Ensure scaling happens from the center */
+}
+
+#links-more-button p {
+  font-size:13px;
 }
 
 #links-more-button:hover {
@@ -444,6 +453,10 @@ input:checked + .slider:before {
 
 #links-more-button p:hover {
   color: var(--privacy-text-hover-color);
+}
+
+#links-more-button:active {
+  transform: scale(0.92) translate(-54.34%); /* Scale down the button slightly when clicked */
 }
 
 #link-more {
@@ -457,9 +470,9 @@ input:checked + .slider:before {
   transform: translate(-11.3%);
 }
 @media (max-resolution: 1dppx) and (pointer:fine) {
-h1{
-  font-size:3.8em;
-}
+  h1{
+    font-size:3.8em;
+  }
 
   p, .site-nav, #links-menu p, ul li, h2, #privacy-text {
     font-size: 18.3px;
@@ -471,6 +484,10 @@ h1{
 
   #footer p {
     font-size: .8em;
+  }
+
+  #links-more-button p {
+    font-size:15px;
   }
 }
 

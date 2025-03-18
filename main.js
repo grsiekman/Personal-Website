@@ -204,12 +204,17 @@ if (window.matchMedia("(pointer: fine)").matches) {
 const linksMore = document.getElementById('links-more-button');
 const linksMoreDiv = document.getElementById('link-more');
 
+linksMoreDiv.style.display = 'none';
+
 linksMore.addEventListener('pointerdown', () => {
-    console.log('Current display:', linksMoreDiv.style.display ); // Debugging
+    const currentScroll = window.scrollY; // Get current scroll position
+
     if (linksMoreDiv.style.display === 'none') {
         linksMoreDiv.style.display = 'grid';
+        linksMore.innerHTML = '<p>Less ↑</p>';
     } else {
         linksMoreDiv.style.display = 'none';
+        linksMore.innerHTML = '<p>More ↓</p>';
         window.scrollTo({ top: currentScroll, behavior: 'smooth' }); // Smoothly adjust scroll
     }
 });
