@@ -467,7 +467,7 @@ input:checked + .slider:before {
   column-gap: 45%; /* Optional: Add spacing between items */
   transform: translate(-11.3%);
 }
-@media (max-resolution: 1dppx) and (pointer:fine) {
+@media screen (max-resolution: 1dppx) and (pointer:fine) and (min-width: 1844px) {
   h1{
     font-size:3.8em;
   }
