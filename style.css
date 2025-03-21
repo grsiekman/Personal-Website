@@ -455,6 +455,9 @@ input:checked + .slider:before {
 
 #links-more-button:active {
   transform: scale(0.92) translate(-54.34%); /* Scale down the button slightly when clicked */
+  user-select: none; /* Standard property */
+  -webkit-user-select: none; /* For WebKit browsers */
+  -ms-user-select: none; /* For older versions of Internet Explorer */
 }
 
 #link-more {
@@ -467,7 +470,7 @@ input:checked + .slider:before {
   column-gap: 45%; /* Optional: Add spacing between items */
   transform: translate(-11.3%);
 }
-@media screen (max-resolution: 1dppx) and (pointer:fine) and (min-width: 1844px) {
+@media (max-resolution: 1dppx) and (min-width: 1919px) {
   h1{
     font-size:3.8em;
   }
