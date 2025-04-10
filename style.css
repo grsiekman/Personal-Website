@@ -375,6 +375,7 @@ input:checked + .slider:before {
 
 #popup-text {
   margin-left: 2.25vw;
+  display: block;
 }
 
 .links-page-home-link {
@@ -496,10 +497,11 @@ input:checked + .slider:before {
   .theme-switch-wrapper {
     font-size: 1.6vw;
     margin-left: 80%;
+    /*bottom: 2.3%;*/
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 630px) {
   #id_photo, #id_photo_links {
     max-width: 40%;
     height: auto;
@@ -515,19 +517,20 @@ input:checked + .slider:before {
   }
 
   #shadow-box {
-    width: 16.5vw;
-    height: 10vw;
+    width: 19vw;
+    height: 5.8vh;
     background-color: #666666;
     opacity: 65%;
     position: fixed;
-    bottom: 1.2%;
-    border-radius: 28px;
+    bottom: 1.15%;
+    border-radius: 20px;
     margin-left: 69%;
   }
 
   .theme-switch-wrapper {
     font-size: 2.25vw;
-    margin-left: 71.5%;
+    margin-left: 72.5%;
+    margin-bottom:.8%;
   }
 
   .theme-switch {
@@ -565,8 +568,8 @@ input:checked + .slider:before {
     background-color: var(--popup-dismiss-color);
     font-size: 1.1em;
     margin-top:1.5%;
-    margin-right:1%;
-    width:4%;
+    margin-right:1.5%;
+    width:5.5%;
   }
 
   #popup-dismiss-button p {
@@ -576,9 +579,18 @@ input:checked + .slider:before {
   #popup-x {
     display: inline-grid;
     align-content: center;
-    margin-left: 0.3vw;
+    margin-left: 1vw;
     margin-right: 0.3vw;
     margin-top: 0;
     margin-bottom: 0.3vw;
+  }
+
+  #link-more {
+    column-gap:52.5%;
+    transform: translate(-17.55%);
+  }
+
+  .link-submenu-div {
+    width:23.5vw;
   }
 }
