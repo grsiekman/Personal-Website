@@ -448,6 +448,20 @@ input:checked + .slider:before {
   display: none;
 }
 
+#links-more-button:active {
+  transform: scale(0.92) translate(-54.34%); /* Scale down the button slightly when clicked */
+  user-select: none; /* Standard property */
+  -webkit-user-select: none; /* For WebKit browsers */
+  -ms-user-select: none; /* For older versions of Internet Explorer */
+}
+
+#link-more {
+  display: none; /* Use CSS Grid for layout */
+  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+  column-gap: 45%; /* Optional: Add spacing between items */
+  transform: translate(-11.3%);
+}
+
 @media (pointer:fine) {
   #links-more-button:hover {
     cursor: pointer;
@@ -458,21 +472,8 @@ input:checked + .slider:before {
   #links-more-button p:hover {
     color: var(--privacy-text-hover-color);
   }
-
-  #links-more-button:active {
-    transform: scale(0.92) translate(-54.34%); /* Scale down the button slightly when clicked */
-    user-select: none; /* Standard property */
-    -webkit-user-select: none; /* For WebKit browsers */
-    -ms-user-select: none; /* For older versions of Internet Explorer */
-  }
 }
 
-#link-more {
-  display: none; /* Use CSS Grid for layout */
-  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
-  column-gap: 45%; /* Optional: Add spacing between items */
-  transform: translate(-11.3%);
-}
 @media (max-resolution: 1dppx) and (min-width: 1919px) {
   h1{
     font-size:3.8em;
