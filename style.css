@@ -27,7 +27,6 @@
 body {
   background-color: var(--background-color);
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -213,12 +212,20 @@ a {
   flex-grow: 1;
 }
 
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 217px;
+  left: 15px;
+  border-radius: 5px;
+}
+
 #footer p {
   color: #dae0e6;
   font-size: 0.75em;
   margin-left: 0.75%;
-  margin-top:1.5vw;
-  margin-bottom: 1.5vw;
+  margin-top:1.25vw;
+  margin-bottom: 1vw;
 }
 
 #footer a {
@@ -257,7 +264,7 @@ a {
   align-items: center;
   position: fixed;
   bottom: 1.5%;
-  margin-left: 90%;
+  margin-left: 91%;
   font-size: 1vw;
   color: #dae0e6;
 }

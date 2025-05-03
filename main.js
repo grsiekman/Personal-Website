@@ -146,7 +146,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    document.querySelector('#lsWipe').addEventListener('click', storageWipe, false);
+    if(document.querySelector('#lsWipe')) {
+        document.querySelector('#lsWipe').addEventListener('click', storageWipe, false);
+    }
 });
 
 // These are variables for the below functions that handle link buttons on the links page.
@@ -206,22 +208,72 @@ const linksMore = document.getElementById('links-more-button');
 const linksMoreDiv = document.getElementById('link-more');
 
 //This sets the initial state of the more links div to none
-linksMoreDiv.style.display = 'none';
+if(linksMore) {
+    linksMoreDiv.style.display = 'none';
 
-//This handles the more/less button on the links page. It checks for a pointerdown event
-//and then checks the current state of the linksMoreDiv. If it's none, it sets it to grid
-//and changes the button text to less. If it's not none, it sets it to none and changes
-//the button text to more. It also prevents default behavior like text selection and
-//smoothly scrolls back to the current scroll position.
-linksMore.addEventListener('pointerdown', () => {
-    const currentScroll = window.scrollY; // Get current scroll position
+    //This handles the more/less button on the links page. It checks for a pointerdown event
+    //and then checks the current state of the linksMoreDiv. If it's none, it sets it to grid
+    //and changes the button text to less. If it's not none, it sets it to none and changes
+    //the button text to more. It also prevents default behavior like text selection and
+    //smoothly scrolls back to the current scroll position.
+    linksMore.addEventListener('pointerdown', () => {
+        const currentScroll = window.scrollY; // Get current scroll position
 
-    if (linksMoreDiv.style.display === 'none') {
-        linksMoreDiv.style.display = 'grid';
-        linksMore.innerHTML = '<p>Less ↑</p>';
+        if (linksMoreDiv.style.display === 'none') {
+            linksMoreDiv.style.display = 'grid';
+            linksMore.innerHTML = '<p>Less ↑</p>';
+        } else {
+            linksMoreDiv.style.display = 'none';
+            linksMore.innerHTML = '<p>More ↓</p>';
+            window.scrollTo({ top: currentScroll, behavior: 'smooth' }); // Smoothly adjust scroll
+        }
+    });
+}
+
+//Declaring variables for the footer and content
+let footer = document.querySelector('#footer');
+let content = document.querySelector('.content');
+
+//Need to check anytime the webpage changes, or scroll(need to look into this)
+//If overlap == true, do something that makes the footer more visible
+
+function footerOverlap() {
+    //Declaring the space footer and content live in, and what an overlap is
+    let footerSpace = footer.getBoundingClientRect();
+    let contentSpace = content.getBoundingClientRect();
+    let overlap = (
+        footerSpace.right > contentSpace.left &&
+        footerSpace.top < contentSpace.bottom);
+    let footText = document.querySelector('#footer p');
+    let footLink = document.querySelector('#footer a');
+
+    footerSpace = footer.getBoundingClientRect();
+    contentSpace = content.getBoundingClientRect();
+    if(overlap) {
+        footer.style.backgroundColor = 'rgba(50,50,50,.35)';
+        footer.style.backdropFilter = 'blur(4px)';
     } else {
-        linksMoreDiv.style.display = 'none';
-        linksMore.innerHTML = '<p>More ↓</p>';
-        window.scrollTo({ top: currentScroll, behavior: 'smooth' }); // Smoothly adjust scroll
+        footer.style.backgroundColor = 'transparent';
+        footer.style.backdropFilter = 'none';
     }
+}
+
+footerOverlap();
+
+window.addEventListener('resize', footerOverlap);
+window.addEventListener('scroll', footerOverlap);
+
+// Set up a MutationObserver to detect changes in the content
+const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+        if (mutation.type === 'childList' || mutation.type === 'subtree') {
+            footerOverlap();
+        }
+    });
+});
+
+// Start observing the content element for changes
+observer.observe(content, {
+    childList: true,
+    subtree: true
 });
