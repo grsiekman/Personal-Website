@@ -511,7 +511,7 @@ input:checked + .slider:before {
   width:50%;
   display:inline-grid;
   justify-items:center;
-  vertical-align:middle;
+  vertical-align:baseline;
   margin-top:30px;
   margin-left:24%;
 }
@@ -525,7 +525,7 @@ input:checked + .slider:before {
   width:33%;
   display:inline-grid;
   justify-items:center;
-  vertical-align:middle;
+  vertical-align:baseline;
   margin-top:30px;
 }
 
@@ -564,7 +564,7 @@ input:checked + .slider:before {
     font-size:3.8em;
   }
 
-  p, .site-nav, #links-menu p, ul li, h2, #privacy-text {
+  p, .site-nav, #links-menu p, ul li, #info-box h2, #privacy-text {
     font-size: 18.3px;
   }
 
@@ -698,5 +698,14 @@ input:checked + .slider:before {
 
   .link-submenu-div {
     width:23.5vw;
+  }
+
+  .audio-portfolio-item, .photo-portfolio-item  { 
+    width:49%;
+  }
+
+  .tech-portfolio-item{
+    width:70%;
+    margin-left:15%;
   }
 }
