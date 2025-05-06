@@ -278,14 +278,19 @@ observer.observe(content, {
 });
 
 //Fullscreening Photography Portfolio images
-function getPics() {
-const photogImages = document.querySelector('.photo-portfolio-images');
+function getPics() {}
+const photogImages = document.querySelectorAll('.photo-portfolio-images');
 const fullPage = document.querySelector('#fullpage');
 
 photogImages.forEach(img => {
     img.addEventListener('click', function() {
         fullPage.style.backgroundImage = 'url(' + img.src + ')';
         fullPage.style.display = 'block';
+        document.body.style.overflow = 'hidden';
     });
 });
-}
+
+fullPage.addEventListener('click', () => {
+    fullPage.style.display = 'none'; // Hide the #fullpage container
+    document.body.style.overflow = ''; // Re-enable scrolling
+});

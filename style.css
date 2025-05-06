@@ -553,6 +553,28 @@ input:checked + .slider:before {
   border-radius:8px;
 }
 
+#fullpage {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1000; /* Ensure it appears above other elements */
+  background-color: rgba(0, 0, 0, 0.75);
+  -webkit-user-select:none;
+  user-select:none;
+  backdrop-filter: blur(1px);
+  overflow:hidden;
+}
+
+#fullpage:hover {
+  cursor:zoom-out;
+}
+
 @media (pointer:fine) {
   #links-more-button:hover {
     cursor: pointer;
