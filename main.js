@@ -276,3 +276,16 @@ observer.observe(content, {
     childList: true,
     subtree: true
 });
+
+//Fullscreening Photography Portfolio images
+function getPics() {
+const photogImages = document.querySelector('.photo-portfolio-images');
+const fullPage = document.querySelector('#fullpage');
+
+photogImages.forEach(img => {
+    img.addEventListener('click', function() {
+        fullPage.style.backgroundImage = 'url(' + img.src + ')';
+        fullPage.style.display = 'block';
+    });
+});
+}

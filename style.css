@@ -490,6 +490,10 @@ input:checked + .slider:before {
   letter-spacing: unset;
 }
 
+#portfolio {
+  margin-left:.35%;
+}
+
 #portfolio p {
   text-align:center;
 }
@@ -519,6 +523,7 @@ input:checked + .slider:before {
 .tech-portfolio-images {
   width:70%;
   border-radius:8px;
+  transform: translateX(23%);
 }
 
 .audio-portfolio-item {
@@ -532,6 +537,7 @@ input:checked + .slider:before {
 .audio-portfolio-images {
   width:70%;
   border-radius:8px;
+  transform: translateX(23%);
 }
 
 .photo-portfolio-item {
@@ -556,6 +562,17 @@ input:checked + .slider:before {
 
   #links-more-button p:hover {
     color: var(--privacy-text-hover-color);
+  }
+
+  .portfolio-images:hover {
+    cursor: pointer;
+    transform: scale(103%) translateX(22.5%);
+    filter: brightness(70%);
+  }
+  
+  .photo-portfolio-images:hover {
+    cursor: zoom-in;
+    transform: scale(103%) translateX(0%);
   }
 }
 
@@ -601,7 +618,7 @@ input:checked + .slider:before {
     width: 17%;
   }
 
-  p, .site-nav, #links-menu p, ul li, h2, #privacy-text {
+  p, .site-nav, #links-menu p, ul li, #info-box h2, #privacy-text {
     font-size: 14.5px;
   }
 
