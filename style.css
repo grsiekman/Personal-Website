@@ -568,7 +568,6 @@ input:checked + .slider:before {
   -webkit-user-select:none;
   user-select:none;
   backdrop-filter: blur(1px);
-  overflow:hidden;
 }
 
 #fullpage:hover {
@@ -598,7 +597,7 @@ input:checked + .slider:before {
   }
 }
 
-@media (max-resolution: 1dppx) and (min-width: 1919px) {
+@media (max-resolution: 1dppx) and (min-width: 1905px) {
   h1{
     font-size:3.8em;
   }
