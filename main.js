@@ -232,7 +232,7 @@ if(linksMore) {
 
 //Declaring variables for the footer and content
 let footer = document.querySelector('#footer');
-let content = document.querySelector('.content');
+let content = document.querySelector('.main-box');
 
 //Need to check anytime the webpage changes, or scroll(need to look into this)
 //If overlap == true, do something that makes the footer more visible
@@ -244,13 +244,10 @@ function footerOverlap() {
     let overlap = (
         footerSpace.right > contentSpace.left &&
         footerSpace.top < contentSpace.bottom);
-    let footText = document.querySelector('#footer p');
-    let footLink = document.querySelector('#footer a');
 
-    footerSpace = footer.getBoundingClientRect();
-    contentSpace = content.getBoundingClientRect();
+    //Check if there is an overlap, add the background and blur or else make sure it isn't there
     if(overlap) {
-        footer.style.backgroundColor = 'rgba(50,50,50,.35)';
+        footer.style.backgroundColor = 'var(--shadow-box-bg-color)';
         footer.style.backdropFilter = 'blur(4px)';
     } else {
         footer.style.backgroundColor = 'transparent';
@@ -258,8 +255,10 @@ function footerOverlap() {
     }
 }
 
+//Initialize footerOverlap
 footerOverlap();
 
+//Listen for window resize or scroll and then run footerOverlap
 window.addEventListener('resize', footerOverlap);
 window.addEventListener('scroll', footerOverlap);
 
