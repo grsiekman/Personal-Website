@@ -26,9 +26,6 @@ head.insertAdjacentHTML("beforeend", `
     <meta name="keywords" content="Greg Siekman, Siekman, siekmang, Greg Siekman Maine">
     <meta name="author" content="Greg Siekman">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <meta property="og:image" content="sharepic.jpg">
     <meta property="og:image:type" content="image/jpg">
     <meta property="og:image:width" content="1080">
@@ -42,4 +39,4 @@ head.insertAdjacentHTML("beforeend", `
     <link rel="manifest" href="favicon/site.webmanifest" />
     <meta name="theme-color" content="#ffffff" />
     <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-`);
+`)
