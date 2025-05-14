@@ -7,7 +7,7 @@ const socialPhotoAlt = 'Picture of Greg Siekman on the other side of a screen, l
 var path = window.location.pathname;
 var page = path.split("/").pop();
 
-if(page == "links.html") {
+if(page == 'links.html' || page == 'links') {
   photo = document.getElementById('id_photo_links');
   photo.src = socialPhotoSrc;
   photo.alt = socialPhotoAlt;

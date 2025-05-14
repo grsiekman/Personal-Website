@@ -4,7 +4,7 @@ let header = `<h1>Greg Siekman</h1>`
 var path = window.location.pathname;
 var page = path.split("/").pop();
 
-if(page == "privacy.html") {
+if(page == 'privacy.html' || page == 'privacy') {
     header = `<h1 class="privacy-h1">Privacy Policy</h1>`;
 }
 

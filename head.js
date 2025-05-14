@@ -6,15 +6,15 @@ let pageInfo =
 var path = window.location.pathname;
 var page = path.split("/").pop();
 
-if(page == "portfolio.html") {
+if(page == 'portfolio.html' || page == 'portfolio') {
     pageInfo = 
     `<title>Portfolio - Greg Siekman</title>
     <meta name="description" content="Privacy Policy for the website of Greg Siekman">`;
-} else if (page == "privacy.html") {
+} else if (page == 'privacy.html' || page == 'privacy') {
     pageInfo = 
     `<title>Privacy Policy - Greg Siekman</title>
     <meta name="description" content="Greg Siekman's Portfolio">`;
-} else if (page == "links.html") {
+} else if (page == 'links.html' || page == 'links') {
     pageInfo = 
     `<title>Links - Greg Siekman</title>
     <meta name="description" content="Greg Siekman's Social Media Links">`;
