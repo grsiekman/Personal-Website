@@ -783,7 +783,3 @@ input:checked + .slider:before {
     margin-left:15%;
   }
 }
-
-body {
-  visibility: visible;
-}

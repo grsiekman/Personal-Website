@@ -2,10 +2,9 @@
 <html lang="en">
 
 <head>
-    <style>
-        body { visibility: hidden; }
-    </style>
-	<link rel="stylesheet" href="style.css">
+  <style>body { visibility: hidden; }</style>
+  <link rel="stylesheet" href="style.css">
+  <noscript><link rel="stylesheet" href="style.css"></noscript>
 </head>
 
 <body>
@@ -75,6 +74,11 @@
     <script src="footer.js" defer></script>
     <script src="popup.js" defer></script>
     <script src="main.js" defer></script>
+    <script defer>
+      window.addEventListener('load', function() {
+        document.body.style.visibility = 'visible';
+      });
+    </script>
 </body>
 
 </html>
