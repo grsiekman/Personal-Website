@@ -20,9 +20,8 @@ if(page == "portfolio.html") {
     <meta name="description" content="Greg Siekman's Social Media Links">`;
 }
 
-head.innerHTML = `
-    ${pageInfo}    
-    <link rel="stylesheet" href="style.css">
+head.insertAdjacentHTML("beforeend", `
+    ${pageInfo}
     <meta charset="UTF-8">
     <meta name="keywords" content="Greg Siekman, Siekman, siekmang, Greg Siekman Maine">
     <meta name="author" content="Greg Siekman">
@@ -42,5 +41,5 @@ head.innerHTML = `
     <meta name="apple-mobile-web-app-title" content="Greg Siekman" />
     <link rel="manifest" href="favicon/site.webmanifest" />
     <meta name="theme-color" content="#ffffff" />
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()"></meta>
-    `;
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+`);

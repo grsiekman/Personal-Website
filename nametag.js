@@ -1,4 +1,4 @@
-const nametag = document.querySelector('#nametag');
+let nametag = document.querySelector('#nametag');
 let header = `<h1>Greg Siekman</h1>`
 
 var path = window.location.pathname;
