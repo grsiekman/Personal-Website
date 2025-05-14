@@ -221,10 +221,10 @@ if(linksMore) {
 
         if (linksMoreDiv.style.display === 'none') {
             linksMoreDiv.style.display = 'grid';
-            linksMore.innerHTML = '<p>Less ↑</p>';
+            linksMore.innerHTML = '<p>Less &uarr;</p>';
         } else {
             linksMoreDiv.style.display = 'none';
-            linksMore.innerHTML = '<p>More ↓</p>';
+            linksMore.innerHTML = '<p>More &darr;</p>';
             window.scrollTo({ top: currentScroll, behavior: 'smooth' }); // Smoothly adjust scroll
         }
     });

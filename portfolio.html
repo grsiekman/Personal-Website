@@ -2,52 +2,29 @@
 <html lang="en">
 
 <head>
-    <title>Home - Greg Siekman</title>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="description" content="Personal Website of Greg Siekman">
-    <meta name="keywords" content="Greg Siekman, Siekman, siekmang, Greg Siekman Maine">
-    <meta name="author" content="Greg Siekman">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>body { visibility: hidden; }</style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <meta property="og:image" content="sharepic.jpg">
-    <meta property="og:image:type" content="image/jpg">
-    <meta property="og:image:width" content="1080">
-    <meta property="og:image:height" content="718">
-    <meta property="og:image:alt" content="Lanscape photo of a body of water and fall trees">
-    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
-    <link rel="shortcut icon" href="favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Greg Siekman" />
-    <link rel="manifest" href="favicon/site.webmanifest" />
-    <meta name="theme-color" content="#ffffff" />
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&display=swap&text=1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz%20%21%22%23%24%25%26%27" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <noscript><link rel="stylesheet" href="style.css"></noscript>
 </head>
 
 <body onload="getPics()">
+    <script src="head.js"></script>
     <div class="content" id="port-html">
-        <img src="img/IMG_6571.png" alt="Picture of Greg Siekman smiling, wearing a white dress shirt and blue blazer" id="id_photo">
+        <img src=" " alt=" " id="id_photo">
 
         <div class="main-box" id="home-main-box" role="main">
             <div id="nametag" role="banner">
-                <h1>Greg Siekman</h1>
-                <div class="menu-pill">
-                    <ul class="site-nav">
-                        <li class="site-nav-item"><a href="index.html" rel="noopener noreferrer">Home</a></li>
-                        <li class="site-nav-item"><a href="portfolio.html" rel="noopener noreferrer">Portfolio</a></li>
-                        <li class="site-nav-item"><a href="privacy.html" rel="noopener noreferrer">Privacy Policy</a></li>
-                    </ul>
-                </div>
+
             </div>
             <div id="portfolio">
                 <h2>Web Development</h2>
                 <div id="tech-portfolio" class="portfolio-section">
                     <div class="tech-portfolio-item">
                     <!--Personal Website code -->
-                    <a href="https://github.com/siekmang/Personal-Website" class="portfolio-link" target="_blank" rel="noopener noreferrer"><img src="img/portfolio/Screenshot 2025-05-03 at 5.00.21 PM.png" alt="Image of the homepage of Greg Siekman's website" class="tech-portfolio-images portfolio-images">
+                    <a href="https://github.com/siekmang/Personal-Website" class="portfolio-link" target="_blank" rel="noopener noreferrer"><img src="img/portfolio/websiteimg.png" alt="Image of the homepage of Greg Siekman's website" class="tech-portfolio-images portfolio-images">
                     <p>Personal Website</p></a>
                     </div>
                     <!--MLB Scores Website-->
@@ -103,33 +80,30 @@
 
     <div id="shadow-box"></div>
     <div id="dark-switch-hover">
-        <div class="theme-switch-wrapper">
-            <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" aria-label="Switch visual theme between light and dark" />
-                <div class="slider round"></div>
-            </label>
-            <div id="enable-text">Switch Theme</div>
-        </div>
+
     </div>
 
     <div id="footer" role="contentinfo">
-        <p>&#169; 2025 Greg Siekman • <a href="privacy.html" rel="noopener noreferrer">Privacy Policy</a></p>
+
     </div>
 
     <div id="popup">
-        <span class="popuptext" id="dark-mode-popup">
-            <span id="popup-dismiss-button">
-                <span id="popup-x">
-                    <p aria-label="Close privacy popup.">x</p>
-                </span>
-            </span>
-            <span id="popup-text">Your theme preferences will be saved to local storage. See <a href="privacy.html">privacy policy</a> for more.</span>
-        </span>
+
     </div>
     </div>
     <br>
     <br>
-    <script src="main.js"></script>
+    <script src="photo.js" defer></script>
+    <script src="nametag.js" defer></script>
+    <script src="themeswitch.js" defer></script>
+    <script src="footer.js" defer></script>
+    <script src="popup.js" defer></script>
+    <script src="main.js" defer></script>
+    <script defer>
+      window.addEventListener('load', function() {
+        document.body.style.visibility = 'visible';
+      });
+    </script>
 </body>
 
 </html>
