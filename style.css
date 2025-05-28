@@ -79,21 +79,21 @@ body {
 }
 
 h1 {
-  font-family: "Bebas Neue", serif;
+  font-family: "Urbanist", serif;
   margin-top: 1%;
   margin-bottom: .2%;
   font-size: 2.8em;
-  letter-spacing: 0.12em;
+  font-weight:900;
   color: var(--font-color);
   display:contents;
 }
 
 h2, h3 {
-  font-family: "Bebas Neue", serif;
+  font-family: "Noto Serif", sans-serif;
   text-align:center;
   color: var(--font-color);
   font-weight: 100;
-  letter-spacing:.125em;
+  letter-spacing:.006em;
 }
 
 h2 {
@@ -107,13 +107,14 @@ h3 {
 }
 
 p, .site-nav, #links-menu p, ul li, #privacy-text {
-  font-family: "Lora", serif;
+  font-family: "Noto Serif", serif;
   color: var(--font-color);
   font-size:15.2px;
+  letter-spacing: .006em;
 }
 
 #popup, #popup a { 
-  font-family:'Lora', serif;
+  font-family:'Noto Serif', serif;
 }
 
 .home-text-list {
@@ -484,11 +485,10 @@ input:checked + .slider:before {
 #info-box h2 {
   font-size: 1.1em;
   margin-bottom:0;
-  font-family: "Lora", serif;
+  font-family: "Noto Serif", serif;
   color:var(--font-color);
   text-align:left;
   font-weight:bold;
-  letter-spacing: unset;
 }
 
 #portfolio {
@@ -501,8 +501,6 @@ input:checked + .slider:before {
 
 .portfolio-link p{
   margin-top:10px;
-  font: "Lora", serif;
-  color:var(--font-color);
   text-decoration: underline;
   text-decoration-thickness: 0.5px;
   
@@ -510,6 +508,14 @@ input:checked + .slider:before {
 
 .portfolio-link p:hover{
   color:var(--privacy-text-hover-color);
+}
+
+#here-text {
+  margin:0;
+}
+
+#tech-portfolio {
+  margin-bottom:25px
 }
 
 .tech-portfolio-item {
@@ -575,18 +581,9 @@ input:checked + .slider:before {
   cursor:zoom-out;
 }
 
-#info-box h2 {
-  font-size: 1.1em;
-  margin-bottom:0;
-  font-family: "Lora", serif;
-  color:var(--font-color);
-  text-align:left;
-  font-weight:bold;
-  letter-spacing: unset;
-}
-
 #portfolio h2 {
   margin-top:15px;
+  letter-spacing: .035em;
 }
 
 @media (pointer:fine) {

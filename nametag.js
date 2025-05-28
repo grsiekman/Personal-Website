@@ -1,11 +1,11 @@
 let nametag = document.querySelector('#nametag');
-let header = `<h1>Greg Siekman</h1>`
+let header = `<h1>GREG SIEKMAN</h1>`
 
 var path = window.location.pathname;
 var page = path.split("/").pop();
 
 if(page == 'privacy.html' || page == 'privacy') {
-    header = `<h1 class="privacy-h1">Privacy Policy</h1>`;
+    header = `<h1 class="privacy-h1">PRIVACY POLICY</h1>`;
 }
 
 nametag.innerHTML = `
