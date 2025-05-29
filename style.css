@@ -506,7 +506,6 @@ input:checked + .slider:before {
   margin-top:10px;
   text-decoration: underline;
   text-decoration-thickness: 0.5px;
-  
 }
 
 .portfolio-link p:hover{
