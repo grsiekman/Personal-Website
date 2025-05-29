@@ -162,10 +162,12 @@ if (window.matchMedia("(pointer: fine)").matches) {
     const hoverStyle = {
         transform: 'scale(1.06) translateX(-47.5%)',
         transition: 'all .2s',
+        backgroundColor: 'var(--link-button-hover-color)'
     };
     const defaultStyle = {
         transform: 'scale(1) translateX(-50%)',
         transition: 'all .2s',
+        backgroundColor: 'var(--menu-pill-color)'
     };
     const clickStyle = {
         transform: 'scale(1) translateX(-50%)',
