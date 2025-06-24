@@ -696,20 +696,20 @@ input:checked + .slider:before {
   }
 
   #shadow-box {
-    width: 19vw;
+    width: 28vw;
     height: 5.8vh;
     background-color:var(--menu-pill-color);
     backdrop-filter:var(--foot-backdrop-filter);
     position: fixed;
     bottom: 1.15%;
     border-radius: 20px;
-    margin-left: 69%;
+    margin-left: 65%;
     backdrop-filter: blur(2px);
   }
 
   .theme-switch-wrapper {
     font-size: 2.25vw;
-    margin-left: 72.5%;
+    margin-left: 68.5%;
     margin-bottom:.8%;
   }
 
