@@ -2,3 +2,5 @@
 /Depreciated JS/
 
 .DS_Store
+.idea/modules.xml
+/.idea
