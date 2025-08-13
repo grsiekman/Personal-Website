@@ -1,6 +1,6 @@
 // These variables are for the theme handling
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+const currentTheme = localStorage.getItem('theme') ?? null;
 const metaThemeColor = document.querySelector('meta[name="theme-color"]');
 const dismissButton = document.querySelector('#popup-dismiss-button');
 const DARK_THEME_COLOR = '#273745';
@@ -45,7 +45,7 @@ function privacyPopup() {
     }
 }
 
-// This function is to switch the theme
+// This function allows the user to switch the theme
 function switchTheme(e) {
     privacyPopup();
     if (e.target.checked) {
@@ -73,14 +73,14 @@ if (toggleSwitch) {
 }
 
 // This function sets the privacy popup display to none
-function buttonClick(event) {
+function dismissButtonClick(event) {
     document.querySelector('#popup').style.display = 'none';
 }
 
 // This checks for a click on the dismiss button on the privacy popup and triggers the
-// buttonClick function to make the privacy popup disappear
+// dismissButtonClick function to make the privacy popup disappear
 if (dismissButton) {
-    dismissButton.addEventListener('click', buttonClick, false);
+    dismissButton.addEventListener('click', dismissButtonClick, false);
 }
 
 // This section handles touchscreen behavior for the social buttons on the homepage. 
