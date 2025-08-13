@@ -5,3 +5,7 @@
 .idea/inspectionProfiles/profiles_settings.xml
 .idea/inspectionProfiles/Project_Default.xml
 .idea/siekmang.github.io.iml
+
+.idea/modules.xml
+/.idea
+img/.DS_Store
